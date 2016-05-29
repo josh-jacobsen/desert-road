@@ -3,9 +3,9 @@
   background: linear-gradient(
     rgba(0, 0, 0, 0.2),
     rgba(0, 0, 0, 0.2)),
-    url(../images/teKaha.jpg);
+    url(../images/nzFleet.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  filter: hue-rotate(238deg);
-  filter: blur(100px);
+  /*filter: hue-rotate(238deg);
+  filter: blur(100px);*/
 }
