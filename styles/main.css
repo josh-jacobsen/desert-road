@@ -9,7 +9,33 @@ body {
   background: linear-gradient(
     rgba(0, 0, 0, 0.2),
     rgba(0, 0, 0, 0.2)),
-    url(../images/nzFleet.jpg);
+    url(../images/skydive.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*filter: hue-rotate(238deg);
+  filter: blur(100px);*/
+}
+
+
+.second-page {
+  height: 100vh;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2)),
+    url(../images/c130.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*filter: hue-rotate(238deg);
+  filter: blur(100px);*/
+}
+
+
+.third-page {
+  height: 100vh;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2)),
+    url(../images/fleet.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   /*filter: hue-rotate(238deg);
