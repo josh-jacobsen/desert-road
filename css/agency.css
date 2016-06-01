@@ -159,7 +159,13 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.5em;
 }
 }header {
-    background-image: url(../images/skydive.jpg);
+
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ), url(../images/skydive.jpg);
+
+    /*background-image: url(../images/skydive.jpg);*/
     background-repeat: none;
     background-attachment: scroll;
     background-position: center center;
@@ -187,8 +193,20 @@ header .intro-text .intro-heading {
     font-weight: 700;
     font-size: 50px;
     line-height: 50px;
-    margin-bottom: 25px;
+    margin-bottom: 0;
 }
+
+header .intro-text .intro-heading-small {
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 50px;
+    margin-bottom: 0;
+}
+
+
+
 @media (min-width:768px) {
     header .intro-text {
     padding-top: 300px;
@@ -207,8 +225,21 @@ header .intro-text .intro-heading {
     font-weight: 700;
     font-size: 75px;
     line-height: 75px;
-    margin-bottom: 50px;
+    margin-bottom: 0;
 }
+
+header .intro-text .intro-heading-small {
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 37px;
+    line-height: 75px;
+    margin-bottom: 0;
+}
+
+
+
+
 }section {
     padding: 100px 0;
 }
