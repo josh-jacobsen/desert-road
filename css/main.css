@@ -56,3 +56,14 @@ header .intro-text .intro-heading-small {
 
 
 }
+
+@media (min-width: 768px)
+.container-custom {
+    width: 850px;
+}
+
+.navbar-header {
+  text-align: center;
+  color: hsla(45, 35%, 75%, 1.0);
+
+}
