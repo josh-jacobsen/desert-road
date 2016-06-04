@@ -95,8 +95,8 @@ h1, h2, h3, h4, h5, h6 {
     border-color: transparent;
 }
 .navbar-default .navbar-brand {
-    color: #fed136;
-    font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+    /*color: #fed136;*/
+    /*font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;*/
 }
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:active, .navbar-default .navbar-brand.active {
     color: #fec503;
@@ -164,9 +164,9 @@ h1, h2, h3, h4, h5, h6 {
 header {
 
     background: linear-gradient(
-      rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0.2)
-    ), url(../images/skydive_blur.jpg);
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ), url(../images/skydive_cropped2.jpg);
     height: 100vh;
 
     /*background-image: url(../images/skydive.jpg);*/
@@ -205,23 +205,14 @@ header .intro-text .intro-heading {
 
 }
 
-header .intro-text .intro-heading-small {
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 50px;
-    margin-bottom: 0;
-    /*color: hsla(45, 35%, 75%, 1.0);*/
 
-}
 
 
 
 @media (min-width:768px) {
     header .intro-text {
     padding-top: 200px;
-    padding-bottom: 200px;
+    /*padding-bottom: 200px;*/
 }
 header .intro-text .intro-lead-in {
     font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -239,14 +230,14 @@ header .intro-text .intro-heading {
     margin-bottom: 0;
 }
 
-header .intro-text .intro-heading-small {
+/*header .intro-text .intro-heading-small {
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 43px;
     line-height: 75px;
     margin-bottom: 50px;
-}
+}*/
 
 
 
