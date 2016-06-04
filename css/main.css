@@ -1,5 +1,5 @@
 .company-name {
-  margin-top: 4%;
+  margin-top: 9%;
   text-align: left;
 }
 
@@ -12,6 +12,10 @@
 
 .main-button {
   margin-top: 8%;
+}
+
+.text {
+  font-size: 24px;
 
 }
 
