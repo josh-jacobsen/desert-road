@@ -123,3 +123,8 @@ header .intro-text .intro-heading {
 .section-subheading {
   line-height: 36px;
 }
+
+.muted-color {
+  color: hsla(26, 5%, 29%, 1.0);
+
+}
