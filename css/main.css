@@ -1,7 +1,7 @@
 header {
     background: linear-gradient(
-      rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0.2)
+      rgba(0, 0, 0, 0.25),
+      rgba(0, 0, 0, 0.25)
     ), url(../images/skydive_cropped2.jpg);
     height: 100vh;
 
@@ -25,14 +25,14 @@ header {
 
 .company-name {
   margin-top: 6%;
-  text-align: left;
+  text-align: center;
   font-family: "Helvetica Neue";
 }
 
 .intro-text {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   padding-bottom: 0;
 }
 
@@ -41,18 +41,23 @@ header {
 }
 
 .text-box {
+  border: 1px solid white;
+  border-radius: 25px;
+
   background: linear-gradient(
-    rgba(0, 0, 0, 0.1),
-    rgba(0, 0, 0, 0.1)
-  )
+    rgba(0, 0, 0, 0.0),
+    rgba(0, 0, 0, 0.0)
+  );
+
 }
 
 .main-text {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 50px;
+  margin: 0;
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 70px;
   text-transform: uppercase;
-  font-family: "Roboto Slab";
+  font-family: "Montserrat";
   /*font-family: 'Raleway', sans-serif;*/
 }
 
@@ -160,7 +165,7 @@ header .intro-text .intro-heading {
 section h3.section-subheading {
   line-height: 44px;
   font-size: 30px;
-  font-family: "Railway";
+  font-family: "Montserrat";
 
 }
 
