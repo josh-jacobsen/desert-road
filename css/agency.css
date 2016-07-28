@@ -1,10 +1,8 @@
 body {
     overflow-x: hidden;
-    font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Montserrat";
 }
-.text-muted {
-    color: #777;
-}
+
 .text-primary {
     color: #fed136;
 }
@@ -25,7 +23,7 @@ a:hover, a:focus, a:active, a.active {
     color: #fec503;
 }
 h1, h2, h3, h4, h5, h6 {
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Montserrat";
     text-transform: uppercase;
     font-weight: 700;
 }
@@ -247,7 +245,6 @@ header .intro-text .intro-heading {
 section h2.section-heading {
     font-size: 40px;
     margin-top: 0;
-    margin-bottom: 15px;
 }
 section h3.section-subheading {
     font-size: 16px;
@@ -255,7 +252,6 @@ section h3.section-subheading {
     text-transform: none;
     /*font-style: italic;*/
     font-weight: 400;
-    margin-bottom: 75px;
 }
 @media (min-width:768px) {
     section {
