@@ -1,9 +1,9 @@
 header {
     background: linear-gradient(
-      rgba(0, 0, 0, 0.3),
-      rgba(0, 0, 0, 0.3)
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
     ), url(../images/skydive_3.jpg);
-    height: 80vh;
+    height: 100vh;
 
     /*background-image: url(../images/skydive.jpg);*/
     background-repeat: none;
