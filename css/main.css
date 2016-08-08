@@ -1,3 +1,7 @@
+.center {
+  text-align: center;
+}
+
 header {
     background: linear-gradient(
       rgba(0, 0, 0, 0.35),
