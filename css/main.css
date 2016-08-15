@@ -2,16 +2,48 @@
   text-align: center;
 }
 
+.explanation {
+  font-size: 35px;
+  text-align: center;
+}
+
+.explanation-text {
+  font-size: 20px;
+}
+
+.explanation-text-margin-bottom {
+  font-size: 20px;
+}
+
+#contact-form {
+  display: block;
+}
+
+/*header {
+   background: linear-gradient(
+     rgba(0, 0, 0, 0.35),
+     rgba(0, 0, 0, 0.35)
+   ), url(../images/skydive_3.jpg) no-repeat top center fixed;
+   background-size: cover;
+
+   height: 100vh;
+   margin: 0;
+   padding: 0;
+   color: #fff;
+   text-align: center;
+   font-size: 50px;
+}*/
+
+
+
 header {
     background: linear-gradient(
       rgba(0, 0, 0, 0.35),
       rgba(0, 0, 0, 0.35)
     ), url(../images/skydive_3.jpg);
     height: 100vh;
-
-    /*background-image: url(../images/skydive.jpg);*/
     background-repeat: none;
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-position: center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -20,6 +52,44 @@ header {
     text-align: center;
     color: #fff;
 }
+
+.whatwedo-image {
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ), url(../images/city.jpg);
+    height: 100vh;
+    background-repeat: none;
+    background-attachment: fixed;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.howwedoit-image {
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.35),
+      rgba(0, 0, 0, 0.35)
+    ), url(../images/meeting.jpg);
+    height: 100vh;
+    background-repeat: none;
+    background-attachment: fixed;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+/*.whatwedo {
+  padding-bottom: 3%;
+}*/
 
 .portfolio-caption {
   margin-bottom: 10%;
@@ -186,4 +256,13 @@ section h3.section-subheading {
 
 .margin-bottom {
   margin-bottom: 2%;
+}
+
+.logo {
+  max-height: 60px;
+  display: block;
+  max-width: 100%;
+  /*height: auto;*/
+  /*width: auto;*/
+  /*margin: 0;*/
 }
