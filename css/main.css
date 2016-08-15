@@ -41,8 +41,8 @@ input {
 
 header {
     background: linear-gradient(
-      rgba(0, 0, 0, 0.35),
-      rgba(0, 0, 0, 0.35)
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
     ), url(../images/skydive_3.jpg);
     height: 100vh;
     background-repeat: none;
@@ -95,7 +95,12 @@ header {
 }*/
 
 .portfolio-caption {
-  margin-bottom: 10%;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.35),
+    rgba(0, 0, 0, 0.35)
+    );
+  margin-top: 15%;
+
 }
 
 
