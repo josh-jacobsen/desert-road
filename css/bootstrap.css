@@ -1296,11 +1296,7 @@ p {
   font-weight: 300;
   line-height: 1.4;
 }
-@media (min-width: 768px) {
-  .lead {
-    font-size: 21px;
-  }
-}
+
 small,
 .small {
   font-size: 85%;
@@ -1452,7 +1448,13 @@ dt {
 dd {
   margin-left: 0;
 }
+
+/* first media query */
+
 @media (min-width: 768px) {
+  .lead {
+    font-size: 21px;
+  }
   .dl-horizontal dt {
     float: left;
     width: 160px;
@@ -1466,6 +1468,9 @@ dd {
     margin-left: 180px;
   }
 }
+
+/* end of first media query */
+
 abbr[title],
 abbr[data-original-title] {
   cursor: help;
@@ -1582,6 +1587,9 @@ pre code {
   max-height: 340px;
   overflow-y: scroll;
 }
+
+/* start of container code */
+
 .container {
   padding-right: 15px;
   padding-left: 15px;
@@ -1775,6 +1783,11 @@ pre code {
 .col-xs-offset-0 {
   margin-left: 0;
 }
+
+/* col code */
+
+/* col code for media query 768 */
+
 @media (min-width: 768px) {
   .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
     float: left;
@@ -1933,6 +1946,11 @@ pre code {
     margin-left: 0;
   }
 }
+
+/* end of col code for media query 768 */
+
+/* start of col code for media query 992 */
+
 @media (min-width: 992px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
@@ -2091,6 +2109,9 @@ pre code {
     margin-left: 0;
   }
 }
+/* end of col code for media query 992 */
+
+/* start of col code for media query 1200 */
 @media (min-width: 1200px) {
   .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
     float: left;
@@ -2249,6 +2270,9 @@ pre code {
     margin-left: 0;
   }
 }
+/* end of col code for media query 1200 */
+
+/* start of table code */
 table {
   background-color: transparent;
 }
@@ -2444,6 +2468,8 @@ table th[class*="col-"] {
   min-height: .01%;
   overflow-x: auto;
 }
+
+/* start of table code for media query 767 */
 @media screen and (max-width: 767px) {
   .table-responsive {
     width: 100%;
@@ -2489,6 +2515,9 @@ table th[class*="col-"] {
     border-bottom: 0;
   }
 }
+/* end of table code for media query 767 */
+
+
 fieldset {
   min-width: 0;
   padding: 0;
@@ -2914,6 +2943,10 @@ select[multiple].input-lg {
   margin-bottom: 10px;
   color: #737373;
 }
+
+/* start of form code */
+
+/* start of form code for media query 768 */
 @media (min-width: 768px) {
   .form-inline .form-group {
     display: inline-block;
@@ -2964,6 +2997,9 @@ select[multiple].input-lg {
     top: 0;
   }
 }
+/* end of form code for media query 768 */
+
+
 .form-horizontal .radio,
 .form-horizontal .checkbox,
 .form-horizontal .radio-inline,
@@ -3002,6 +3038,8 @@ select[multiple].input-lg {
     font-size: 12px;
   }
 }
+
+/* start of button code */
 .btn {
   display: inline-block;
   padding: 6px 12px;
@@ -3635,6 +3673,8 @@ tbody.collapse.in {
   bottom: 100%;
   margin-bottom: 2px;
 }
+
+
 @media (min-width: 768px) {
   .navbar-right .dropdown-menu {
     right: 0;
@@ -6237,6 +6277,9 @@ button.close {
   border-right-width: 0;
   border-left-color: #fff;
 }
+
+/* this is all carousel code (including media queries) */
+
 .carousel {
   position: relative;
 }
@@ -6461,6 +6504,10 @@ button.close {
     bottom: 20px;
   }
 }
+
+/* end of carousel code */
+
+
 .clearfix:before,
 .clearfix:after,
 .dl-horizontal dd:before,
@@ -6570,6 +6617,9 @@ button.close {
 .visible-lg-inline-block {
   display: none !important;
 }
+
+/* start of media queries */
+
 @media (max-width: 767px) {
   .visible-xs {
     display: block !important;
