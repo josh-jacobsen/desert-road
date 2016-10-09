@@ -699,7 +699,7 @@ header .intro-text {
   }
 
   .main-text {
-    color: blue;
+    color: green;
     margin: 0;
     font-weight: 500;
     font-size: 68px;
@@ -709,8 +709,13 @@ header .intro-text {
   }
   .whatwedo-row {
     padding-top: 15%;
-    color: blue;
+    color: green;
   }
+
+  .col-centered {
+    float: none;
+    margin: 0 auto;
+}
 
 }
 
@@ -736,7 +741,7 @@ header .intro-text {
   }
 
   .main-text {
-    color: red;
+    color: white;
     margin: 0;
     font-weight: 500;
     font-size: 72px;
@@ -746,7 +751,7 @@ header .intro-text {
   }
   .whatwedo-row {
     padding-top: 15%;
-    color: red;
+    color: white;
   }
 }
 
