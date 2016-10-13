@@ -87,6 +87,9 @@ h1, h2, h3, h4, h5, h6 {
     color: #fed136;
     background-color: #fff;
 }
+
+
+
 .navbar-default {
     background-color: #222;
     border-color: transparent;
@@ -509,6 +512,11 @@ section h3.section-subheading {
   .navbar-default.navbar-shrink .navbar-brand {
       font-size: 1.5em;
   }
+
+  /*this makes the subheading shrink on the scroll down*/
+  .navbar-default.navbar-shrink .sub-title {
+      font-size: .6em;
+  }
 }
 
 @media (min-width:768px) {
@@ -618,6 +626,12 @@ header .intro-text {
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
+  /*Make the navbar thicker when it drops down from the CBP Animated header*/
+
+  .navbar {
+    height: 65px;
+  }
+
   .navbar-brand {
     float: left;
     height: 50px;
@@ -625,6 +639,12 @@ header .intro-text {
     font-size: 22px;
     line-height: 20px;
   }
+  .sub-title {
+    font-size: 13px;
+    color: white;
+  }
+
+
 
   header .intro-text {
       padding-top: 220px;
@@ -694,7 +714,7 @@ header .intro-text {
 
   .company-name {
     margin-top: 4%;
-    text-align: center;
+    text-align: left;
     font-family: "Montserrat";
   }
 
@@ -714,13 +734,25 @@ header .intro-text {
 
   .col-centered {
     float: none;
-    margin: 0 auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 10%;
+    margin-right: auto;
 }
 
 }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
+
+  /*Make the navbar thicker when it drops down from the CBP Animated header*/
+  .navbar {
+    height: 80px;
+  }
+  .navbar-nav {
+    margin-top: 5px;
+  }
+
   .navbar-brand {
     float: left;
     height: 50px;
@@ -728,15 +760,20 @@ header .intro-text {
     font-size: 28px;
     line-height: 20px;
   }
+  .main-heading-navbar {
+    height: 50px;
+  }
+
+
 
   header .intro-text {
-      padding-top: 120px;
+      padding-top: 170px;
       padding-bottom: 50px;
   }
 
   .company-name {
     margin-top: 4%;
-    text-align: center;
+    text-align: left;
     font-family: "Montserrat";
   }
 
@@ -753,7 +790,18 @@ header .intro-text {
     padding-top: 15%;
     color: white;
   }
+
+  .sub-title {
+    margin-top: 1%;
+    padding-top: 1%;
+    font-size: 16px;
+    color: white;
+  }
+
+
 }
+
+
 
 /* end of media queries for min-width:768px */
 
