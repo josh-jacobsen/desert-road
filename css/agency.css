@@ -1,6 +1,7 @@
-body {
+html, body {
     overflow-x: hidden;
     font-family: "Montserrat";
+    width: 100%;
 }
 
 p {
@@ -101,6 +102,11 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:active, .navbar-default .navbar-brand.active {
     color: #fec503;
 }
+
+/*.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:active, .navbar-default .navbar-brand.active {
+    color: #fec503;
+}*/
+
 .navbar-default .navbar-collapse {
     border-color: rgba(255, 255, 255, .02);
 }
@@ -509,6 +515,8 @@ section h3.section-subheading {
       background-color: #222;
       padding: 10px 0;
   }
+
+  /*this makes the main company name shrink on the scroll down*/
   .navbar-default.navbar-shrink .navbar-brand {
       font-size: 1.5em;
   }
@@ -516,6 +524,8 @@ section h3.section-subheading {
   /*this makes the subheading shrink on the scroll down*/
   .navbar-default.navbar-shrink .sub-title {
       font-size: .6em;
+      line-height: 2px;
+
   }
 }
 
@@ -540,67 +550,94 @@ section h3.section-subheading {
 /*==========  Mobile First Method  ==========*/
 /*==========  Text Sizing  ==========*/
 
-/* Main DRPM Heading Top Left */
+/* Make the top navbar thicker (always present until 768px) */
+.navbar {
+  height: 65px;
+}
+
+/* The left brand text/logo */
 .navbar-brand {
   float: left;
   height: 50px;
-  padding: 15px 15px;
-  font-size: 12px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 15px;
+  font-size: 22px;
   line-height: 20px;
 }
 
+/* The left sub-text below the brand */
+.sub-title {
+  font-size: 13px;
+  color: white;
+}
+
+/* Hamburger menu */
+.navbar-toggle {
+  position: relative;
+  float: right;
+  padding: 9px 10px;
+  margin-top: 15px;
+  margin-right: 30px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+/* Protecting what matters */
 header .intro-text {
-    padding-top: 300px;
+    padding-top: 230px;
     padding-bottom: 50px;
 }
 
+/* Protecting what matters */
 .company-name {
-  margin-top: 4%;
-  text-align: center;
+  text-align: left;
   font-family: "Montserrat";
 }
 
+/* Protecting what matters */
 .main-text {
-  color: magenta;
+  color: white;
   margin: 0;
   font-weight: 500;
-  font-size: 30px;
-  line-height: 40px;
+  font-size: 40px;
+  line-height: 65px;
   text-transform: uppercase;
   font-family: "Montserrat";
 }
 
+
+
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
-  /* Main DRPM Heading Top Left */
+
+  /* The left brand text/logo */
   .navbar-brand {
     float: left;
     height: 50px;
-    padding: 15px 15px;
-    font-size: 13px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 15px;
+    font-size: 22px;
     line-height: 20px;
   }
-
-  header .intro-text {
-      padding-top: 220px;
-      padding-bottom: 50px;
-  }
-
-  .main-text {
+  /* The left sub-text below the brand */
+  .sub-title {
+    font-size: 13px;
     color: white;
-    margin: 0;
-    font-weight: 500;
-    font-size: 48px;
-    line-height: 80px;
-    text-transform: uppercase;
-    font-family: "Montserrat";
   }
 
+  /* Hamburger menu */
   .navbar-toggle {
     position: relative;
     float: right;
     padding: 9px 10px;
-    margin-top: 8px;
+    margin-top: 15px;
     margin-right: 30px;
     margin-bottom: 8px;
     background-color: transparent;
@@ -608,6 +645,25 @@ header .intro-text {
     border: 1px solid transparent;
     border-radius: 4px;
   }
+
+    header .intro-text {
+      padding-top: 220px;
+      padding-bottom: 50px;
+    }
+
+    .main-text {
+      color: white;
+      margin: 0;
+      font-weight: 500;
+      font-size: 48px;
+      line-height: 80px;
+      text-align: left;
+      text-transform: uppercase;
+      font-family: "Montserrat";
+      padding-left: 15px;
+
+    }
+
 
   .whatwedo-image {
         padding-top: 12px;
@@ -626,25 +682,38 @@ header .intro-text {
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
-  /*Make the navbar thicker when it drops down from the CBP Animated header*/
 
-  .navbar {
-    height: 65px;
-  }
-
+  /* The left brand text/logo */
   .navbar-brand {
     float: left;
     height: 50px;
-    padding: 15px 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 15px;
     font-size: 22px;
     line-height: 20px;
   }
+
+  /* The left sub-text below the brand */
   .sub-title {
     font-size: 13px;
     color: white;
   }
 
-
+  /* Hamburger menu */
+  .navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-top: 15px;
+    margin-right: 30px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+  }
 
   header .intro-text {
       padding-top: 220px;
@@ -652,37 +721,66 @@ header .intro-text {
   }
 
   .main-text {
-    color: yellow;
+    color: white;
     margin: 0;
     font-weight: 500;
     font-size: 68px;
     line-height: 80px;
+    text-align: left;
     text-transform: uppercase;
     font-family: "Montserrat";
+    padding-left: 15px;
   }
   .whatwedo-row {
     padding-top: 5%;
-    color: yellow;
+    color: white;
   }
 
 }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
+
+  /* Make the navbar thicker when it drops down from the CBP Animated header */
+  .navbar {
+    height: 80px;
+  }
+  /* Make the right nav menu sit lower in the navbar to line up with brand */
+  .navbar-nav {
+    margin-top: 5px;
+  }
+
+  /* The left brand text/logo */
   .navbar-brand {
     float: left;
     height: 50px;
     padding: 15px 15px;
-    font-size: 24px;
+    font-size: 29px;
     line-height: 20px;
   }
+
+  /* The left sub-text below the brand */
+  .sub-title {
+    font-size: 17px;
+    color: white;
+    line-height: 2;
+  }
+
   header .intro-text {
       padding-top: 220px;
       padding-bottom: 50px;
   }
 
+  /* Protecting what matters */
+  .company-name {
+    margin-top: 4%;
+    text-align: left;
+    font-family: "Montserrat";
+  }
+
+  /* Protecting what matters */
   .main-text {
-    color: green;
+    color: white;
     margin: 0;
     font-weight: 500;
     font-size: 68px;
@@ -693,25 +791,46 @@ header .intro-text {
 
   .whatwedo-row {
     padding-top: 5%;
-    color: green;
+    color: white;
   }
 
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
+
+  /* Make the navbar thicker when it drops down from the CBP Animated header */
+  .navbar {
+    height: 80px;
+  }
+  /* Make the right nav menu sit lower in the navbar to line up with brand */
+  .navbar-nav {
+    margin-top: 5px;
+  }
+
+  /* The left brand text/logo */
   .navbar-brand {
     float: left;
     height: 50px;
     padding: 15px 15px;
-    font-size: 28px;
+    font-size: 29px;
     line-height: 20px;
   }
+
+  /* The left sub-text below the brand */
+  .sub-title {
+    font-size: 17px;
+    color: white;
+    line-height: 2;
+  }
+
+
   header .intro-text {
-      padding-top: 120px;
+      padding-top: 180px;
       padding-bottom: 50px;
   }
 
+  /* Protecting what matters*/
   .company-name {
     margin-top: 4%;
     text-align: left;
@@ -719,7 +838,7 @@ header .intro-text {
   }
 
   .main-text {
-    color: green;
+    color: white;
     margin: 0;
     font-weight: 500;
     font-size: 68px;
@@ -729,7 +848,7 @@ header .intro-text {
   }
   .whatwedo-row {
     padding-top: 15%;
-    color: green;
+    color: white;
   }
 
   .col-centered {
@@ -749,17 +868,27 @@ header .intro-text {
   .navbar {
     height: 80px;
   }
+  /*make the right nav menu sit lower in the navbar to line up with brand*/
   .navbar-nav {
     margin-top: 5px;
   }
 
+  /* The left brand text/logo */
   .navbar-brand {
     float: left;
     height: 50px;
     padding: 15px 15px;
-    font-size: 28px;
+    font-size: 40px;
     line-height: 20px;
   }
+
+  /* The left sub-text below the brand */
+  .sub-title {
+    font-size: 23px;
+    color: white;
+    line-height: 2;
+  }
+
   .main-heading-navbar {
     height: 50px;
   }
@@ -791,12 +920,7 @@ header .intro-text {
     color: white;
   }
 
-  .sub-title {
-    margin-top: 1%;
-    padding-top: 1%;
-    font-size: 16px;
-    color: white;
-  }
+
 
 
 }
