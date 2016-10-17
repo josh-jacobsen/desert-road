@@ -145,9 +145,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .fullscreen-bg {
   background: linear-gradient(
-    rgba(0, 0, 0, 0.4),
-    rgba(0, 0, 0, 0.4)
-  ), url(../images/skydive_3.jpg);
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ), url(../images/king_2.jpg);
   height: 100vh;
   background-repeat: none;
   background-attachment: fixed;
