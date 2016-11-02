@@ -17,10 +17,10 @@ a, a:hover, a:focus, a:active, a.active {
     outline: 0;
 }
 a {
-    color: #fed136; /* origional #fed136 */
+    color: hsla(45, 35%, 75%, 1.0); /* origional #fed136 */
 }
 a:hover, a:focus, a:active, a.active {
-    color: #fec503; /* origional #fec503 */
+    color: hsla(45, 35%, 75%, 1.0); /* origional #fec503 */
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: "Montserrat";
@@ -39,17 +39,17 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #222;
 }
 .btn-primary {
-    color: #fff;
-    background-color: #fed136;
-    border-color: #fed136;
+    color: black; /* origional: #fff; */
+    background-color: hsla(45, 35%, 75%, 1.0); /* origional: #fed136; */
+    border-color: hsla(45, 35%, 75%, 1.0); /* origional: #fed136; */
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-weight: 700;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
-    color: #fff;
-    background-color: #fec503;
-    border-color: #f6bf01;
+    color: black; /* origional: #fff; */
+    background-color: hsla(45, 35%, 75%, 1.0); /* origional: #fec503; */
+    border-color: hsla(45, 35%, 75%, 1.0);/* origional: #f6bf01; */
 }
 .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
     background-image: none;
@@ -102,7 +102,7 @@ h1, h2, h3, h4, h5, h6 {
     /*font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;*/
 }
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:active, .navbar-default .navbar-brand.active {
-    color: #fec503;
+    color: hsla(45, 35%, 75%, 1.0); /* origional: #fec503; */
 }
 
 /*.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:active, .navbar-default .navbar-brand.active {
@@ -130,17 +130,17 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff;
 }
 .navbar-default .nav li a:hover, .navbar-default .nav li a:focus {
-    color: #fed136;
+    color: hsla(45, 35%, 75%, 1.0); /* origional: #fed136; */
     outline: 0;
 }
 .navbar-default .navbar-nav>.active>a {
     border-radius: 0;
-    color: #fff;
-    background-color: #fed136;
+    color: #000;
+    background-color: hsla(45, 35%, 75%, 1.0);
 }
 .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
-    color: #fff;
-    background-color: #fec503;
+    color: #000; /* origional: #fff; */
+    background-color: hsla(45, 35%, 75%, 1.0); /* origional: #fec503; */
 }
 
 .fullscreen-bg {
