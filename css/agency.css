@@ -145,8 +145,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .fullscreen-bg {
   background: linear-gradient(
-    rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.5)
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.3)
   ), url(../images/chessBoard.jpg);
   height: 85vh;
   background-repeat: none;
@@ -294,7 +294,7 @@ input {
       rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0.4)
     ), url(../images/city.jpg);
-    height: 100vh;
+    height: 85vh;
     background-repeat: none;
     background-attachment: fixed;
     background-position: center center;
