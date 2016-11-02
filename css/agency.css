@@ -148,7 +148,7 @@ h1, h2, h3, h4, h5, h6 {
     rgba(0, 0, 0, 0.5),
     rgba(0, 0, 0, 0.5)
   ), url(../images/chessBoard.jpg);
-  height: 90vh;
+  height: 85vh;
   background-repeat: none;
   background-attachment: fixed;
   /*background-position: center center;*/
@@ -564,7 +564,7 @@ section h3.section-subheading {
   line-height: 20px;
 }
 
-/* The left sub-text below the brand */
+/* Text below the brand on the left */
 .sub-title {
   font-size: 13px;
   color: white;
@@ -629,7 +629,7 @@ header .intro-text {
     font-size: 22px;
     line-height: 20px;
   }
-  /* The left sub-text below the brand */
+  /* Text below the brand on the left */
   .sub-title {
     font-size: 13px;
     color: white;
@@ -698,7 +698,7 @@ header .intro-text {
     line-height: 20px;
   }
 
-  /* The left sub-text below the brand */
+  /* Text below the brand on the left */
   .sub-title {
     font-size: 13px;
     color: white;
@@ -762,7 +762,7 @@ header .intro-text {
     line-height: 20px;
   }
 
-  /* The left sub-text below the brand */
+  /* Text below the brand on the left */
   .sub-title {
     font-size: 17px;
     color: white;
@@ -820,7 +820,7 @@ header .intro-text {
     line-height: 20px;
   }
 
-  /* The left sub-text below the brand */
+  /* Text below the brand on the left */
   .sub-title {
     font-size: 17px;
     color: white;
@@ -878,7 +878,7 @@ header .intro-text {
     line-height: 20px;
   }
 
-  /* The left sub-text below the brand */
+  /* The left text below the brand */
   .sub-title {
     font-size: 23px;
     color: white;
@@ -906,52 +906,20 @@ header .intro-text {
     color: white;
     margin: 0;
     font-weight: 500;
-    font-size: 72px;
-    line-height: 96px;
+    font-size: 60px;
+    line-height: 80px;
     text-transform: uppercase;
     font-family: "Montserrat";
+  }
+
+  .sub-text {
+    color: hsla(45, 35%, 75%, 1.0);
+    font-size: 44px;
+
+
   }
   .whatwedo-row {
     padding-top: 15%;
     color: white;
   }
-
-
-
-
 }
-
-
-
-/* end of media queries for min-width:768px */
-
-/*@media (min-width:768px) {
-    header .intro-text {
-    padding-top: 200px;
-    padding-bottom: 200px;
-  }
-  header .intro-text .intro-lead-in {
-      font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-      font-style: italic;
-      font-size: 33px;
-      line-height: 40px;
-      margin-bottom: 130px;
-  }
-  header .intro-text .intro-heading {
-      font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-      text-transform: uppercase;
-      font-weight: 700;
-      font-size: 75px;
-      line-height: 75px;
-      margin-bottom: 0;
-  }
-
-  header .intro-text .intro-heading-small {
-      font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-      text-transform: uppercase;
-      font-weight: 700;
-      font-size: 43px;
-      line-height: 75px;
-      margin-bottom: 50px;
-  }
-}*/
