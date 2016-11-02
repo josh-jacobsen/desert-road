@@ -147,11 +147,13 @@ h1, h2, h3, h4, h5, h6 {
   background: linear-gradient(
     rgba(0, 0, 0, 0.5),
     rgba(0, 0, 0, 0.5)
-  ), url(../images/king_2.jpg);
-  height: 100vh;
+  ), url(../images/chessBoard.jpg);
+  height: 90vh;
   background-repeat: none;
   background-attachment: fixed;
-  background-position: center center;
+  /*background-position: center center;*/
+  background-position: 0px -70px;
+
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -335,8 +337,8 @@ input {
 }
 
 .company-name {
-  margin-top: 4%;
-  text-align: center;
+  /*margin-top: 4%;*/
+  /*text-align: center;*/
   font-family: "Montserrat";
 }
 
@@ -590,7 +592,7 @@ header .intro-text {
 
 /* Protecting what matters */
 .company-name {
-  text-align: left;
+  text-align: center;
   font-family: "Montserrat";
 }
 
@@ -604,6 +606,12 @@ header .intro-text {
   text-transform: uppercase;
   font-family: "Montserrat";
 }
+
+.col-centered {
+  float: none;
+  margin: 0 auto;
+}
+
 
 
 
@@ -652,10 +660,10 @@ header .intro-text {
       font-weight: 500;
       font-size: 48px;
       line-height: 80px;
-      text-align: left;
+      /*text-align: left;*/
       text-transform: uppercase;
       font-family: "Montserrat";
-      padding-left: 15px;
+      /*padding-left: 15px;*/
 
     }
 
@@ -721,10 +729,10 @@ header .intro-text {
     font-weight: 500;
     font-size: 68px;
     line-height: 80px;
-    text-align: left;
+    /*text-align: left;*/
     text-transform: uppercase;
     font-family: "Montserrat";
-    padding-left: 15px;
+    /*padding-left: 15px;*/
   }
   .whatwedo-row {
     padding-top: 5%;
@@ -768,8 +776,8 @@ header .intro-text {
 
   /* Protecting what matters */
   .company-name {
-    margin-top: 4%;
-    text-align: left;
+    /*margin-top: 4%;*/
+    /*text-align: left;*/
     font-family: "Montserrat";
   }
 
@@ -828,7 +836,7 @@ header .intro-text {
   /* Protecting what matters*/
   .company-name {
     margin-top: 4%;
-    text-align: left;
+    /*text-align: left;*/
     font-family: "Montserrat";
   }
 
@@ -846,13 +854,6 @@ header .intro-text {
     color: white;
   }
 
-  .col-centered {
-    float: none;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 10%;
-    margin-right: auto;
-}
 
 }
 
@@ -897,7 +898,7 @@ header .intro-text {
 
   .company-name {
     margin-top: 4%;
-    text-align: left;
+    /*text-align: left;*/
     font-family: "Montserrat";
   }
 
