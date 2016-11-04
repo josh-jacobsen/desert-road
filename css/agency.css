@@ -147,12 +147,12 @@ h1, h2, h3, h4, h5, h6 {
   background: linear-gradient(
     rgba(0, 0, 0, 0.3),
     rgba(0, 0, 0, 0.3)
-  ), url(../images/chessBoard.jpg);
-  height: 80vh;
+  ), url(../images/king.jpg);
+  height: 85vh;
   background-repeat: none;
   background-attachment: fixed;
   /*background-position: center center;*/
-  background-position: 0px -70px;
+  background-position: 0px -170px;
 
   -webkit-background-size: cover;
   -moz-background-size: cover;
