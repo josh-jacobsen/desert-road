@@ -152,7 +152,7 @@ h1, h2, h3, h4, h5, h6 {
   background-repeat: none;
   background-attachment: fixed;
   /*background-position: center center;*/
-  background-position: 0px -100px;
+  background-position: 0px -110px;
 
   -webkit-background-size: cover;
   -moz-background-size: cover;
