@@ -148,11 +148,11 @@ h1, h2, h3, h4, h5, h6 {
     rgba(0, 0, 0, 0.35),
     rgba(0, 0, 0, 0.35)
   ), url(../images/king.jpg);
-  height: 80vh;
+  height: 100vh;
   background-repeat: none;
   background-attachment: fixed;
   /*background-position: center center;*/
-  background-position: 0px -110px;
+  background-position: -113px 10px;
 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -491,8 +491,9 @@ section h3.section-subheading {
     margin-bottom: 0;
   }
 
+  /* Sets the nav bar properties before scrolling down */
   .navbar-default {
-    background-color: transparent;
+    background-color: white; /* origional: transparent */
     padding: 25px 0;
     -webkit-transition: padding .3s;
     -moz-transition: padding .3s;
@@ -508,8 +509,10 @@ section h3.section-subheading {
   .navbar-default .navbar-nav>.active>a {
       border-radius: 3px;
   }
+
+  /* sets the color of the nav bar on scroll down */
   .navbar-default.navbar-shrink {
-      background-color: #222;
+      background-color: white; /* origional #222 */
       padding: 10px 0;
   }
 
@@ -644,6 +647,23 @@ header .intro-text {
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
 
+  .fullscreen-bg {
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.35),
+      rgba(0, 0, 0, 0.35)
+    ), url(../images/king.jpg);
+    height: 85vh;
+    background-repeat: none;
+    background-attachment: fixed;
+    /*background-position: center center;*/
+    background-position: -200px 18px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+  }
+
+
   /* The left brand text/logo */
   .navbar-brand {
     float: left;
@@ -711,6 +731,22 @@ header .intro-text {
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
 
+  .fullscreen-bg {
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.35),
+      rgba(0, 0, 0, 0.35)
+    ), url(../images/king.jpg);
+    height: 85vh;
+    background-repeat: none;
+    background-attachment: fixed;
+    /*background-position: center center;*/
+    background-position: -450px 18px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+  }
+
   /* The left brand text/logo */
   .navbar-brand {
     float: left;
@@ -769,9 +805,26 @@ header .intro-text {
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
 
+  .fullscreen-bg {
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.35),
+      rgba(0, 0, 0, 0.35)
+    ), url(../images/king.jpg);
+    height: 85vh;
+    background-repeat: none;
+    background-attachment: fixed;
+    /*background-position: center center;*/
+    background-position: -295px -10px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+  }
+
+
   /* Make the navbar thicker when it drops down from the CBP Animated header */
   .navbar {
-    height: 80px;
+    height: 96px;
   }
   /* Make the right nav menu sit lower in the navbar to line up with brand */
   .navbar-nav {
@@ -835,9 +888,9 @@ header .intro-text {
 @media only screen and (min-width : 992px) {
 
   /* Make the navbar thicker when it drops down from the CBP Animated header */
-  .navbar {
+  /*.navbar {
     height: 80px;
-  }
+  }*/
   /* Make the right nav menu sit lower in the navbar to line up with brand */
   .navbar-nav {
     margin-top: 5px;
@@ -898,10 +951,27 @@ header .intro-text {
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
 
-  /*Make the navbar thicker when it drops down from the CBP Animated header*/
-  .navbar {
-    height: 80px;
+  .fullscreen-bg {
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.35),
+      rgba(0, 0, 0, 0.35)
+    ), url(../images/king.jpg);
+    height: 80vh;
+    background-repeat: none;
+    background-attachment: fixed;
+    /*background-position: center center;*/
+    background-position: 0px -110px;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
   }
+
+  /*Make the navbar thicker when it drops down from the CBP Animated header*/
+  /*.navbar {
+    height: 80px;
+  }*/
   /*make the right nav menu sit lower in the navbar to line up with brand*/
   .navbar-nav {
     margin-top: 5px;
