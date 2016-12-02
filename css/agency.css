@@ -96,13 +96,20 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-default {
     background-color: #222;
     border-color: transparent;
+
+    /*uncomment the below code for navbar shadow */
+    /*-webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;*/
+
 }
 .navbar-default .navbar-brand {
     /*color: #fed136;*/
     /*font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;*/
 }
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:active, .navbar-default .navbar-brand.active {
-    color: hsla(45, 35%, 75%, 1.0); /* origional: #fec503; */
+    /*color: hsla(45, 35%, 75%, 1.0);  origional: #fec503; */
+    color: white;
 }
 
 /*.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:active, .navbar-default .navbar-brand.active {
@@ -127,7 +134,7 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     font-weight: 400;
     letter-spacing: 1px;
-    color: #fff;
+    color: white; /* origional #fff */
 }
 .navbar-default .nav li a:hover, .navbar-default .nav li a:focus {
     color: hsla(45, 35%, 75%, 1.0); /* origional: #fed136; */
@@ -135,7 +142,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .navbar-default .navbar-nav>.active>a {
     border-radius: 0;
-    color: #000;
+    color: #a7a8a9; /* origional #000 */
     background-color: hsla(45, 35%, 75%, 1.0);
 }
 .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
@@ -422,9 +429,11 @@ header .intro-text .intro-heading {
 }
 
 .navbar-brand {
-  color: hsla(45, 35%, 75%, 1.0);
+  color: white;
+  /*color: hsla(45, 35%, 75%, 1.0);*/
   /*border-color: hsla(45, 35%, 75%, 1.0);*/
-  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /*font-family: "Open Sans", sans-serif;*/
+  font-family: "Montserrat", sans-serif;
   /*text-transform: uppercase;*/
   font-weight: 500;
   /*border-radius: 3px;*/
@@ -493,8 +502,8 @@ section h3.section-subheading {
 
   /* Sets the nav bar properties before scrolling down */
   .navbar-default {
-    background-color: white; /* origional: transparent */
-    padding: 25px 0;
+    background-color: transparent; /* origional: transparent */
+    padding: 15px 0;
     -webkit-transition: padding .3s;
     -moz-transition: padding .3s;
     transition: padding .3s;
@@ -514,19 +523,28 @@ section h3.section-subheading {
   .navbar-default.navbar-shrink {
       background-color: white; /* origional #222 */
       padding: 10px 0;
+      -webkit-box-shadow: 0 8px 6px -6px #999;
+      -moz-box-shadow: 0 8px 6px -6px #999;
+      box-shadow: 0 8px 6px -6px #999;
+
+
   }
 
   /*this makes the main company name shrink on the scroll down*/
   .navbar-default.navbar-shrink .navbar-brand {
-      font-size: 1.5em;
+    color: #a7a8a9;
+    font-size: 1.5em;
   }
 
   /*this makes the subheading shrink on the scroll down*/
   .navbar-default.navbar-shrink .sub-title {
-      font-size: .6em;
-      line-height: 2px;
-
+    color: #a7a8a9;
+    font-size: .6em;
+    line-height: 2px;
   }
+
+  .navbar-default.navbar-shrink .nav li a {
+    color: #a7a8a9;
 }
 
 @media (min-width:768px) {
@@ -552,7 +570,7 @@ section h3.section-subheading {
 
 /* Make the top navbar thicker (always present until 768px) */
 .navbar {
-  height: 65px;
+  height: 105px;
 }
 
 /* The left brand text/logo */
@@ -570,6 +588,7 @@ section h3.section-subheading {
 /* Text below the brand on the left */
 .sub-title {
   font-size: 13px;
+  /*color: hsla(45, 35%, 75%, 1.0);*/
   color: white;
 }
 
@@ -611,6 +630,7 @@ header .intro-text {
 
 /* Managing risk to maximize performance */
 .sub-text {
+  font-family: 'Open Sans', sans-serif;
   color: white; /* hsla(45, 35%, 75%, 1.0); */
   font-size: 24px;
 }
@@ -648,19 +668,8 @@ header .intro-text {
 @media only screen and (min-width : 320px) {
 
   .fullscreen-bg {
-    background: linear-gradient(
-      rgba(0, 0, 0, 0.35),
-      rgba(0, 0, 0, 0.35)
-    ), url(../images/king.jpg);
     height: 85vh;
-    background-repeat: none;
-    background-attachment: fixed;
-    /*background-position: center center;*/
     background-position: -200px 18px;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
   }
 
 
@@ -676,10 +685,10 @@ header .intro-text {
     line-height: 20px;
   }
   /* Text below the brand on the left */
-  .sub-title {
+  /*.sub-title {
     font-size: 13px;
     color: white;
-  }
+  }*/
 
   /* Hamburger menu */
   .navbar-toggle {
@@ -732,19 +741,7 @@ header .intro-text {
 @media only screen and (min-width : 480px) {
 
   .fullscreen-bg {
-    background: linear-gradient(
-      rgba(0, 0, 0, 0.35),
-      rgba(0, 0, 0, 0.35)
-    ), url(../images/king.jpg);
-    height: 85vh;
-    background-repeat: none;
-    background-attachment: fixed;
-    /*background-position: center center;*/
     background-position: -450px 18px;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
   }
 
   /* The left brand text/logo */
@@ -760,10 +757,10 @@ header .intro-text {
   }
 
   /* Text below the brand on the left */
-  .sub-title {
+  /*.sub-title {
     font-size: 13px;
     color: white;
-  }
+  }*/
 
   /* Hamburger menu */
   .navbar-toggle {
@@ -806,29 +803,17 @@ header .intro-text {
 @media only screen and (min-width : 768px) {
 
   .fullscreen-bg {
-    background: linear-gradient(
-      rgba(0, 0, 0, 0.35),
-      rgba(0, 0, 0, 0.35)
-    ), url(../images/king.jpg);
-    height: 85vh;
-    background-repeat: none;
-    background-attachment: fixed;
-    /*background-position: center center;*/
     background-position: -295px -10px;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
   }
 
 
   /* Make the navbar thicker when it drops down from the CBP Animated header */
   .navbar {
-    height: 96px;
+    /*height: 96px;*/
   }
   /* Make the right nav menu sit lower in the navbar to line up with brand */
   .navbar-nav {
-    margin-top: 5px;
+    margin-top: 15px;
   }
 
   /* The left brand text/logo */
@@ -843,7 +828,7 @@ header .intro-text {
   /* Text below the brand on the left */
   .sub-title {
     font-size: 17px;
-    color: white;
+    /*color: white;*/
     line-height: 2;
   }
 
@@ -893,7 +878,7 @@ header .intro-text {
   }*/
   /* Make the right nav menu sit lower in the navbar to line up with brand */
   .navbar-nav {
-    margin-top: 5px;
+    /*margin-top: 5px;*/
   }
 
   /* The left brand text/logo */
@@ -906,11 +891,11 @@ header .intro-text {
   }
 
   /* Text below the brand on the left */
-  .sub-title {
+  /*.sub-title {
     font-size: 17px;
     color: white;
     line-height: 2;
-  }
+  }*/
 
 
   header .intro-text {
@@ -952,20 +937,8 @@ header .intro-text {
 @media only screen and (min-width : 1200px) {
 
   .fullscreen-bg {
-    background: linear-gradient(
-      rgba(0, 0, 0, 0.35),
-      rgba(0, 0, 0, 0.35)
-    ), url(../images/king.jpg);
     height: 80vh;
-    background-repeat: none;
-    background-attachment: fixed;
-    /*background-position: center center;*/
-    background-position: 0px -110px;
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+    background-position: 0px -37px;
   }
 
   /*Make the navbar thicker when it drops down from the CBP Animated header*/
@@ -974,7 +947,7 @@ header .intro-text {
   }*/
   /*make the right nav menu sit lower in the navbar to line up with brand*/
   .navbar-nav {
-    margin-top: 5px;
+    /*margin-top: 5px;*/
   }
 
   /* The left brand text/logo */
@@ -989,8 +962,8 @@ header .intro-text {
   /* The left text below the brand */
   .sub-title {
     font-size: 23px;
-    color: white;
-    line-height: 2;
+    /*color: white;
+    line-height: 2;*/
   }
 
   .main-heading-navbar {
