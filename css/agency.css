@@ -17,10 +17,10 @@ a, a:hover, a:focus, a:active, a.active {
     outline: 0;
 }
 a {
-    color: hsla(45, 35%, 75%, 1.0); /* origional #fed136 */
+    color: hsla(45, 35%, 75%, 1.0); /* original #fed136 */
 }
 a:hover, a:focus, a:active, a.active {
-    color: hsla(45, 35%, 75%, 1.0); /* origional #fec503 */
+    color: hsla(45, 35%, 75%, 1.0); /* original #fec503 */
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: "Montserrat";
@@ -91,24 +91,20 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #fff;
 }
 
-
-
 .navbar-default {
     background-color: #222;
     border-color: transparent;
-
     /*uncomment the below code for navbar shadow */
     /*-webkit-box-shadow: 0 8px 6px -6px #999;
     -moz-box-shadow: 0 8px 6px -6px #999;
     box-shadow: 0 8px 6px -6px #999;*/
-
 }
 .navbar-default .navbar-brand {
     /*color: #fed136;*/
     /*font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;*/
 }
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:active, .navbar-default .navbar-brand.active {
-    /*color: hsla(45, 35%, 75%, 1.0);  origional: #fec503; */
+    /*color: hsla(45, 35%, 75%, 1.0);  original: #fec503; */
     color: white;
 }
 
@@ -134,21 +130,42 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     font-weight: 400;
     letter-spacing: 1px;
-    color: white; /* origional #fff */
+    color: white; /* original #fff */
 }
+
 .navbar-default .nav li a:hover, .navbar-default .nav li a:focus {
-    color: hsla(45, 35%, 75%, 1.0); /* origional: #fed136; */
+    color: hsla(45, 35%, 75%, 1.0); /* original: #fed136; */
     outline: 0;
 }
-.navbar-default .navbar-nav>.active>a {
-    border-radius: 0;
-    color: #a7a8a9; /* origional #000 */
-    background-color: hsla(45, 35%, 75%, 1.0);
+
+/* dropdown menu box*/
+.navbar-default .nav .dropdown .dropdown-menu a {
+    color: black;
+}
+
+.navbar-default .navbar-nav > .active > a {
+    border-radius: 3px;
+    color: #a7a8a9; /* original #000 */
+    background-color: #428bca; /* original hsla(45, 35%, 75%, 1.0); */
 }
 .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
-    color: #000; /* origional: #fff; */
-    background-color: hsla(45, 35%, 75%, 1.0); /* origional: #fec503; */
+    color: #000; /* original: #fff; */
+    background-color: hsla(45, 35%, 75%, 1.0); /* original: #fec503; */
 }
+
+/* makes to nav menu dropdown on hover, not click*/
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;  /* remove the gap so it doesn't close */
+ }
+
+ .dropdown .open {
+   background-color: white;
+ }
+
+ .dropdown-menu {
+   color: black;
+ }
 
 .fullscreen-bg {
   background: linear-gradient(
@@ -502,26 +519,42 @@ section h3.section-subheading {
 
   /* Sets the nav bar properties before scrolling down */
   .navbar-default {
-    background-color: transparent; /* origional: transparent */
+    background-color: transparent; /* original: transparent */
     padding: 15px 0;
     -webkit-transition: padding .3s;
     -moz-transition: padding .3s;
     transition: padding .3s;
     border: 0;
   }
+  /* animates the brand text/image to shrink slowly*/
   .navbar-default .navbar-brand {
       /*font-size: 2em;*/
       -webkit-transition: all .3s;
       -moz-transition: all .3s;
       transition: all .3s;
   }
-  .navbar-default .navbar-nav>.active>a {
+
+  /* animates the right nav bar to shrink slowly*/
+  .navbar-default .nav li a {
+      /*font-size: 2em;*/
+      -webkit-transition: all .3s;
+      -moz-transition: all .3s;
+      transition: all .3s;
+  }
+
+  .navbar-nav > li > a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      line-height: 15px;
+  }
+
+  .navbar-default .navbar-nav > .active > a {
       border-radius: 3px;
   }
 
   /* sets the color of the nav bar on scroll down */
   .navbar-default.navbar-shrink {
-      background-color: white; /* origional #222 */
+      background-color: white; /* original #222 */
       padding: 10px 0;
       -webkit-box-shadow: 0 8px 6px -6px #999;
       -moz-box-shadow: 0 8px 6px -6px #999;
@@ -543,7 +576,9 @@ section h3.section-subheading {
     line-height: 2px;
   }
 
+  /*attributes of the right hand nav menu on the scroll down*/
   .navbar-default.navbar-shrink .nav li a {
+    font-size: 0.9em;
     color: #a7a8a9;
 }
 
@@ -570,7 +605,7 @@ section h3.section-subheading {
 
 /* Make the top navbar thicker (always present until 768px) */
 .navbar {
-  height: 105px;
+  height: 85px;
 }
 
 /* The left brand text/logo */
