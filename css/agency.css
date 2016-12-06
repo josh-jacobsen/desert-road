@@ -133,24 +133,28 @@ h1, h2, h3, h4, h5, h6 {
     color: white; /* original #fff */
 }
 
+/* set colour of clicked links */
 .navbar-default .nav li a:hover, .navbar-default .nav li a:focus {
-    color: hsla(45, 35%, 75%, 1.0); /* original: #fed136; */
+    color: white; /* original: #fed136; */
     outline: 0;
 }
 
-/* dropdown menu box*/
+/* options for links in dropdown menus*/
 .navbar-default .nav .dropdown .dropdown-menu a {
-    color: black;
+    color: #a7a8a9;
+    background-color: white;
+    font-size: 11px;
 }
 
+/* change the color of the nav link when the focus is on that section */
 .navbar-default .navbar-nav > .active > a {
     border-radius: 3px;
     color: #a7a8a9; /* original #000 */
-    background-color: #428bca; /* original hsla(45, 35%, 75%, 1.0); */
+    background-color: white; /* original hsla(45, 35%, 75%, 1.0); */
 }
 .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
-    color: #000; /* original: #fff; */
-    background-color: hsla(45, 35%, 75%, 1.0); /* original: #fec503; */
+    color: #a7a8a9; /* original: #fff; */
+    background-color: white; /* original: #fec503; */
 }
 
 /* makes to nav menu dropdown on hover, not click*/
@@ -703,7 +707,7 @@ header .intro-text {
 @media only screen and (min-width : 320px) {
 
   .fullscreen-bg {
-    height: 85vh;
+    height: 87vh;
     background-position: -200px 18px;
   }
 
@@ -949,7 +953,7 @@ header .intro-text {
     color: white;
     margin: 0;
     font-weight: 500;
-    font-size: 50px;
+    font-size: 45px;
     line-height: 68px;
     text-transform: uppercase;
     font-family: "Montserrat";
@@ -972,7 +976,6 @@ header .intro-text {
 @media only screen and (min-width : 1200px) {
 
   .fullscreen-bg {
-    height: 80vh;
     background-position: 0px -37px;
   }
 
@@ -1049,8 +1052,4 @@ header .intro-text {
     padding-top: 15%;
     color: white;
   }
-
-
-
-
 }
