@@ -172,7 +172,8 @@ h1, h2, h3, h4, h5, h6 {
    color: blue;
  }*/
 
-.fullscreen-bg {
+/* Index page */
+.index-fullscreen-bg {
   background: linear-gradient(
     rgba(0, 0, 0, 0.35),
     rgba(0, 0, 0, 0.35)
@@ -707,8 +708,8 @@ header .intro-text {
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
 
-  .fullscreen-bg {
-    height: 90vh;
+  .index-fullscreen-bg {
+    height: 87vh;
     background-position: -200px 18px;
   }
 
@@ -780,7 +781,7 @@ header .intro-text {
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
 
-  .fullscreen-bg {
+  .index-fullscreen-bg {
     background-position: -450px 18px;
   }
 
@@ -842,7 +843,7 @@ header .intro-text {
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
 
-  .fullscreen-bg {
+  .index-fullscreen-bg {
     background-position: -295px -10px;
   }
 
@@ -976,7 +977,7 @@ header .intro-text {
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
 
-  .fullscreen-bg {
+  .index-fullscreen-bg {
     background-position: 0px -37px;
   }
 
