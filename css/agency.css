@@ -143,7 +143,8 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-default .nav .dropdown .dropdown-menu a {
     color: #a7a8a9;
     background-color: white;
-    font-size: 11px;
+    font-size: 14px;
+    text-transform: none;
 }
 
 /* change the color of the nav link when the focus is on that section */
@@ -158,18 +159,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* makes to nav menu dropdown on hover, not click*/
-.dropdown:hover .dropdown-menu {
+/*.dropdown:hover .dropdown-menu {
     display: block;
-    margin-top: 0;  /* remove the gap so it doesn't close */
+    margin-top: 0;
+ }*/
+
+ /*.dropdown .open {
+   background-color: blue;
  }
 
- .dropdown .open {
-   background-color: white;
- }
-
- .dropdown-menu {
-   color: black;
- }
+ ul li ul.dropdown-menu li a {
+   color: blue;
+ }*/
 
 .fullscreen-bg {
   background: linear-gradient(
@@ -707,7 +708,7 @@ header .intro-text {
 @media only screen and (min-width : 320px) {
 
   .fullscreen-bg {
-    height: 87vh;
+    height: 90vh;
     background-position: -200px 18px;
   }
 
