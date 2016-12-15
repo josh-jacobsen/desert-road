@@ -1,9 +1,9 @@
-/* Defence page */
-.defence-fullscreen-bg {
+/* Risk Management page */
+.risk-fullscreen-bg {
   background: linear-gradient(
-    rgba(0, 0, 0, 0.35),
-    rgba(0, 0, 0, 0.35)
-  ), url(../images/skydive.jpg);
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.4)
+  ), url(../images/info_security.jpg);
   height: 80vh;
   background-repeat: none;
   background-attachment: fixed;
@@ -16,12 +16,12 @@
   -o-background-size: cover;
 }
 
-.defence-section-heading {
+.risk-section-heading {
   margin-top: 0;
   margin-bottom: 50px;
 }
 
-.defence-section-subheading {
+.risk-section-subheading {
   margin-top: 10;
   margin-bottom: 30;
 }
