@@ -150,8 +150,8 @@ h1, h2, h3, h4, h5, h6 {
 /* change the color of the nav link when the focus is on that section */
 .navbar-default .navbar-nav > .active > a {
     border-radius: 3px;
-    color: #a7a8a9; /* original #000 */
-    background-color: white; /* original hsla(45, 35%, 75%, 1.0); */
+    color: white; /* original #000 */
+    background-color: transparent; /* original hsla(45, 35%, 75%, 1.0); */
 }
 .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
     color: #a7a8a9; /* original: #fff; */
