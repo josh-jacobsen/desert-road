@@ -1080,7 +1080,45 @@ header .intro-text {
   }
 }
 
-.services-image {
-  height: auto;
-  width: 50%;
+
+/* SVGs */
+
+  .services-image {
+    height: auto;
+    width: 50%;
+  }
+
+
+  .services-image-training {
+    margin-top: 10px;
+    margin-bottom: 14px;
+    height: auto;
+    width: 40%;
+  }
+
+  .services-image-soldiers {
+    margin-top: 17px;
+    margin-bottom: 15px;
+    height: auto;
+    width: 49%;
+  }
+
+  .services-image-nzdf {
+    margin-top: 0;
+    margin-bottom: 7px;
+    height: auto;
+    width: 47%;
+  }
+
+  .services-image-nzflag {
+    margin-top: 21px;
+    margin-bottom: 24px;
+    height: auto;
+    width: 55%;
+  }
+
+/* SVGs End */
+
+.index-list {
+  text-align: left;
 }
