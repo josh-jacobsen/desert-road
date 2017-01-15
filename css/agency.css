@@ -1122,3 +1122,8 @@ header .intro-text {
 .index-list {
   text-align: left;
 }
+
+.para-text {
+  text-align: left;
+  color: #777;
+}
