@@ -172,7 +172,8 @@ h1, h2, h3, h4, h5, h6 {
    color: blue;
  }*/
 
-/* Index page */
+/* The below code sets up all the mobile-first defaults for the display on the index page*/
+
 .index-fullscreen-bg {
   background: linear-gradient(
     rgba(0, 0, 0, 0.35),
@@ -188,6 +189,68 @@ h1, h2, h3, h4, h5, h6 {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+}
+
+/* Make the navbar thicker when it drops down from the CBP Animated header */
+.navbar {
+  /*height: 96px;*/
+}
+/* Make the right nav menu sit lower in the navbar to line up with brand */
+.navbar-nav {
+  margin-top: 15px;
+}
+
+/* The left brand text/logo */
+.navbar-brand {
+  float: left;
+  height: 50px;
+  padding: 15px 15px;
+  font-size: 29px;
+  line-height: 20px;
+}
+
+/* Text below the brand on the left */
+.sub-title {
+  font-size: 17px;
+  /*color: white;*/
+  line-height: 2;
+}
+
+header .intro-text {
+    padding-top: 280px;
+    padding-bottom: 50px;
+}
+
+/* Protecting what matters */
+.company-name {
+  /*margin-top: 4%;*/
+  text-align: center;
+  font-family: "Montserrat";
+}
+
+/* Protecting what matters */
+.main-text {
+  color: white;
+  margin: 0;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 60px;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+}
+
+
+/* Managing risk to maximize performance */
+.sub-text {
+font-size: 29px;
+font-family: 'Open Sans', sans-serif;
+color: white;
+}
+
+
+.whatwedo-row {
+  padding-top: 5%;
+  color: white;
 }
 
 header .intro-text .intro-lead-in {
@@ -870,7 +933,6 @@ header .intro-text {
   .index-fullscreen-bg {
     background-position: -295px -10px;
   }
-
 
   /* Make the navbar thicker when it drops down from the CBP Animated header */
   .navbar {
