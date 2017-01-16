@@ -193,11 +193,7 @@ section {
 }
 
 
-section h2.section-heading {
-    font-size: 40px;
-    margin-top: 0;
-    margin-bottom: 40px;
-}
+
 section h3.section-subheading {
     font-size: 16px;
     font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -586,7 +582,7 @@ section h3.section-subheading {
 /*==========  Mobile First Method  ==========*/
 /*==========  Text Sizing  ==========*/
 
-/* The below code sets up all the mobile-first defaults for the display on the index page*/
+/* Before media queries: The below code sets up all the mobile-first defaults for the display on the index page*/
 
 .index-fullscreen-bg {
   background: linear-gradient(
@@ -596,9 +592,7 @@ section h3.section-subheading {
   height: 85vh;
   background-repeat: none;
   background-attachment: fixed;
-  /*background-position: center center;*/
   background-position: -360px 10px;
-
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -606,7 +600,6 @@ section h3.section-subheading {
 }
 
 /* Set the navbar thickness (always present until 768px) */
-
 .navbar {
   height: 70px;
 }
@@ -641,11 +634,9 @@ section h3.section-subheading {
   border-radius: 4px;
 }
 
-
 /* Text below the brand on the left */
 .sub-title {
   font-size: 13px;
-  /*color: white;*/
   line-height: 2;
 }
 
@@ -704,8 +695,6 @@ header .intro-text .intro-heading {
     /*color: hsla(45, 35%, 63%, 1.0);dark*/
     /*color: hsla(45, 35%, 75%, 1.0); /*mid range*/
 }
-
-/* End of Header section number 1 */
 
 /* The left brand text/logo */
 .navbar-brand {
@@ -781,6 +770,64 @@ header .intro-text .intro-heading {
 .explanation-text-margin-bottom {
   font-size: 20px;
 }
+
+.container--limit-width {
+  max-width: 80%;
+}
+
+.section-heading {
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.service-heading {
+  font-size: 18px;
+}
+
+.para-text {
+  text-align: center;
+  color: #777;
+}
+
+.para-text--size {
+  font-size: 12px;
+}
+
+/* List of items on index page */
+.index-list {
+  width: 250px;
+  margin: 0 auto;
+
+  text-align: left;
+  line-height: 30px;
+}
+
+.index-list-align {
+  /*text-align: left;*/
+  line-height: 30px;
+}
+
+
+.services-image-srm {
+  height: auto;
+  width: 45%;
+}
+
+.services-image-training {
+  margin-top: 40px;
+  margin-bottom: 14px;
+  height: auto;
+  width: 36%;
+}
+
+.services-image-nzdf {
+  margin-top: 28px;
+  margin-bottom: 7px;
+  height: auto;
+  width: 36%;
+}
+
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
@@ -922,6 +969,44 @@ header .intro-text .intro-heading {
     color: white;
   }
 
+  .container--limit-width {
+    max-width: 80%;
+  }
+
+  .section-heading {
+      font-size: 34px;
+      margin-top: 0;
+      margin-bottom: 40px;
+  }
+
+  .service-heading {
+    font-size: 22px;
+  }
+
+  .para-text {
+    text-align: center;
+    color: #777;
+  }
+
+  .para-text--size {
+    font-size: 15px;
+  }
+
+  /* List of items on index page */
+  .index-list {
+    width: 250px;
+    margin: 0 auto;
+
+    text-align: left;
+    line-height: 30px;
+  }
+
+  .index-list-align {
+    /*text-align: left;*/
+    line-height: 30px;
+  }
+
+
 }
 
 /* Small Devices, Tablets */
@@ -992,6 +1077,49 @@ header .intro-text .intro-heading {
     color: white;
   }
 
+  .container--limit-width {
+    max-width: 70%;
+  }
+
+  .section-heading {
+      font-size: 40px;
+      margin-top: 0;
+      margin-bottom: 40px;
+  }
+
+  .service-heading {
+    font-size: 22px;
+  }
+
+  .para-text {
+    text-align: center;
+    color: #777;
+  }
+
+  .para-text--size {
+    font-size: 15px;
+  }
+
+
+  .services-image-srm {
+    height: auto;
+    width: 33%;
+  }
+
+  .services-image-training {
+    margin-top: 40px;
+    margin-bottom: 14px;
+    height: auto;
+    width: 26%;
+  }
+
+  .services-image-nzdf {
+    margin-top: 28px;
+    margin-bottom: 7px;
+    height: auto;
+    width: 26%;
+  }
+
 }
 
 /* Medium Devices, Desktops */
@@ -1053,7 +1181,32 @@ header .intro-text .intro-heading {
   /* Managing risk to maximize performance */
   .sub-text {
     font-size: 38px;
+  }
+
+  /* What We Do, Contact Us, etc. */
+  .section-heading {
+      font-size: 45px;
+          margin-top: 0;
+          margin-bottom: 40px;
       }
+
+      /* SRM, Defence Solutions, Training */
+      .service-heading {
+        font-size: 18px;
+      }
+
+      /* Text of SRM, Defence Solutions, Training */
+
+      .para-text--size {
+        font-size: 15px;
+      }
+
+      /* List of items on index page */
+      .index-list {
+        text-align: left;
+        line-height: 30px;
+      }
+
 
   .whatwedo-row {
     padding-top: 15%;
@@ -1123,6 +1276,30 @@ header .intro-text .intro-heading {
       font-size: 44px;
   }
 
+  /* What We Do, Contact Us, etc. */
+  .section-heading {
+      font-size: 50px;
+      margin-top: 0;
+      margin-bottom: 40px;
+  }
+
+  /* SRM, Defence Solutions, Training */
+  .service-heading {
+    font-size: 22px;
+  }
+
+  /* Text of SRM, Defence Solutions, Training */
+
+  .para-text--size {
+    font-size: 16px;
+  }
+
+  /* List of items on index page */
+  .index-list {
+    text-align: left;
+    line-height: 30px;
+  }
+
   /* Project Management & SRM Section */
   .explanation {
     font-size: 35px;
@@ -1141,16 +1318,11 @@ header .intro-text .intro-heading {
     padding-top: 15%;
     color: white;
   }
-}
 
-
-/* SVGs */
-
-  .services-image {
+  .services-image-srm {
     height: auto;
     width: 50%;
   }
-
 
   .services-image-training {
     margin-top: 10px;
@@ -1159,34 +1331,17 @@ header .intro-text .intro-heading {
     width: 40%;
   }
 
-  .services-image-soldiers {
-    margin-top: 17px;
-    margin-bottom: 15px;
-    height: auto;
-    width: 49%;
-  }
-
   .services-image-nzdf {
     margin-top: 0;
     margin-bottom: 7px;
     height: auto;
     width: 47%;
   }
+}
 
-  .services-image-nzflag {
-    margin-top: 21px;
-    margin-bottom: 24px;
-    height: auto;
-    width: 55%;
-  }
+
+/* SVGs */
+
+
 
 /* SVGs End */
-
-.index-list {
-  text-align: left;
-}
-
-.para-text {
-  text-align: left;
-  color: #777;
-}
