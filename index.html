@@ -13,7 +13,7 @@
 
     <meta name="description" content="Desert Road Project Management mitigates the risk to organisations, their people, and their operations">
 
-    <meta name="keywords" content="Desert, road, project, management, health, safety, security"
+    <meta name="keywords" content="Desert, road, project, management, health, safety, security">
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -25,12 +25,12 @@
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
 
     <!-- My Fonts -->
 
-    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
@@ -78,7 +78,9 @@
                       </ul>
                     </li> -->
 
-                    <li class="dropdown">
+                    <!--  TODO uncomment the below for dropdown menu of services -->
+
+                    <!-- <li class="dropdown">
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
                       <ul class="dropdown-menu">
                         <li><a href="views/risk.html">Security Risk Management</a></li>
@@ -87,7 +89,11 @@
                         <li role="separator" class="divider"></li>
                         <li><a href="views/training.html">Training</a></li>
                       </ul>
+                    </li> -->
+                    <li>
+                      <a class="page-scroll"  href="#services">Services</a>
                     </li>
+
                     <li>
                       <a class="page-scroll" href="#contactus">Contact Us</a>
                     </li>
@@ -123,7 +129,7 @@
     </header>
 
     <!-- What We Do Section -->
-    <section id="whatwedo" class="whatwedo">
+    <section id="services" class="whatwedo">
         <div class="container container--limit-width">
           <div class="row">
               <div class="col-md-12 text-center">
@@ -142,10 +148,10 @@
           </div> <!-- end of row -->
 
           <div class="row text-center">
-            <a href="views/risk.html">
+            <!-- <a href="views/risk.html"> -->
               <div class="col-md-4">
                   <img class="services-image-srm" src="./svg/dice.svg">
-                  <h4 class="service-heading muted-color">Security Risk Management</h4>
+                  <h4 class="service-heading service-heading--srm muted-color">Security Risk Management</h4>
 
                   <p class="para-text para-text--size">DRPM provides security risk management support and advice for agencies working to deliver services in enviroments of high-pressure and increased risk. These can include clients working in: </p>
 
@@ -165,11 +171,11 @@
                   <p class="text-muted">placed a burden upon company directors to ensure they are cognisent of the risks that are placed upon them. DRPM can help ensure that they are aware of the responsibilites of their positions and that their duties are appropriately dispensed</p> -->
 
               </div>
-            </a>
-            <a href="views/defence.html">
+            <!-- </a> -->
+            <!-- <a href="views/defence.html"> -->
               <div class="col-md-4">
-                <img class="services-image-nzdf" src="./svg/nzdf.svg">
-                <h4 class="service-heading muted-color">Defence Solutions</h4>
+                <img class="services-image-defence" src="./svg/nzdf.svg">
+                <h4 class="service-heading service-heading--defence muted-color">Defence Solutions</h4>
                 <p class="para-text para-text--size">DRPM provides specialist advisory and project management services to the defence industry.</p>
                 <p class="para-text para-text--size">Our staff have experience across several branches of the New Zealand Defence Force, and have been involved in a range of aspects of the NZDF project management, including:</p>
 
@@ -178,12 +184,12 @@
                   <li class="text-muted">Operational Test and Evaluation</li>
                 </ul>
               </div>
-            </a>
+            <!-- </a> -->
 
-            <a href="views/training.html">
+            <!-- <a href="views/training.html"> -->
               <div class="col-md-4">
                   <img class="services-image-training" src="./svg/training_2.svg">
-                  <h4 class="service-heading muted-color">Training</h4>
+                  <h4 class="service-heading service-heading--training muted-color">Training</h4>
                   <p class="para-text para-text--size">DRPM provides a variety of training solutions to meet the needs of a diverse range of agencies. A sample of our training courses includes:</p>
 
                   <ul class="index-list para-text--size">
@@ -196,7 +202,7 @@
 
 
               </div>
-            </a>
+            <!-- </a> -->
 
           </div> <!-- end of row -->
 
@@ -285,18 +291,18 @@
           <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
-                  <input name="name" type="text" class="form-control" placeholder="Please enter your name">
+                  <input name="name" type="text" class="form-control" placeholder="Name">
                 </div><!-- end of form group -->
                 <div class="form-group">
-                  <input name="_replyto" type="email" class="form-control" placeholder="Please enter your email">
+                  <input name="_replyto" type="email" class="form-control" placeholder="Email">
                 </div><!-- end of form group -->
                 <div class="form-group">
-                  <input name="phone" type="text" class="form-control" placeholder="Please enter your phone number">
+                  <input name="phone" type="text" class="form-control" placeholder="Phone Number">
                 </div><!-- end of form group -->
               </div><!-- end of col-md-6 -->
               <div class="col-md-6">
                 <div class="form-group">
-                  <textarea rows="6" cols="50" name="body" class="form-control" placeholder="Please enter your message"></textarea>
+                  <textarea rows="6" cols="50" name="body" class="form-control" placeholder="Message"></textarea>
                 </div>
               </div><!-- end of col-md-6 -->
             </div> <!-- end of row -->

@@ -821,7 +821,7 @@ header .intro-text .intro-heading {
   width: 36%;
 }
 
-.services-image-nzdf {
+.services-image-defence {
   margin-top: 28px;
   margin-bottom: 7px;
   height: auto;
@@ -1100,6 +1100,19 @@ header .intro-text .intro-heading {
     font-size: 15px;
   }
 
+  /* List of items on index page */
+  .index-list {
+    width: 250px;
+    margin: 0 auto;
+    text-align: left;
+    line-height: 30px;
+  }
+
+  .index-list-align {
+    /*text-align: left;*/
+    line-height: 30px;
+  }
+
 
   .services-image-srm {
     height: auto;
@@ -1113,7 +1126,7 @@ header .intro-text .intro-heading {
     width: 26%;
   }
 
-  .services-image-nzdf {
+  .services-image-defence {
     margin-top: 28px;
     margin-bottom: 7px;
     height: auto;
@@ -1195,7 +1208,27 @@ header .intro-text .intro-heading {
         font-size: 18px;
       }
 
+      .service-heading--srm {
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+
+      .service-heading--defence {
+        margin-top: 32px;
+        margin-bottom: 27px;
+      }
+
+      .service-heading--training {
+        margin-top: 27px;
+        margin-bottom: 25px;
+      }
+
       /* Text of SRM, Defence Solutions, Training */
+
+      .para-text {
+        text-align: left;
+        color: #777;
+      }
 
       .para-text--size {
         font-size: 15px;
@@ -1203,7 +1236,14 @@ header .intro-text .intro-heading {
 
       /* List of items on index page */
       .index-list {
+        width: 100%;
+        margin: 0;
         text-align: left;
+        line-height: 30px;
+      }
+
+      .index-list-align {
+        /*text-align: left;*/
         line-height: 30px;
       }
 
@@ -1212,6 +1252,29 @@ header .intro-text .intro-heading {
     padding-top: 15%;
     color: white;
   }
+
+  .services-image-srm {
+    height: auto;
+    width: 60%;
+  }
+
+  .services-image-defence {
+    margin-top: 0;
+    margin-bottom: 7px;
+    height: auto;
+    width: 53%;
+  }
+
+  .services-image-training {
+    margin-top: 0;
+    margin-bottom: 14px;
+    height: auto;
+    width: 51%;
+  }
+
+
+
+
 }
 
 /* Large Devices, Wide Screens */
@@ -1251,7 +1314,7 @@ header .intro-text .intro-heading {
   }
 
   header .intro-text {
-      padding-top: 200px;
+      padding-top: 250px;
       padding-bottom: 50px;
   }
 
@@ -1286,6 +1349,21 @@ header .intro-text .intro-heading {
   /* SRM, Defence Solutions, Training */
   .service-heading {
     font-size: 22px;
+  }
+
+  .service-heading--srm {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .service-heading--defence {
+    margin-top: 32px;
+    margin-bottom: 27px;
+  }
+
+  .service-heading--training {
+    margin-top: 44px;
+    margin-bottom: 29px;
   }
 
   /* Text of SRM, Defence Solutions, Training */
@@ -1325,13 +1403,13 @@ header .intro-text .intro-heading {
   }
 
   .services-image-training {
-    margin-top: 10px;
+    margin-top: 0;
     margin-bottom: 14px;
     height: auto;
     width: 40%;
   }
 
-  .services-image-nzdf {
+  .services-image-defence {
     margin-top: 0;
     margin-bottom: 7px;
     height: auto;
