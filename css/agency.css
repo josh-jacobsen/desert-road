@@ -1209,8 +1209,8 @@ header .intro-text .intro-heading {
       }
 
       .service-heading--srm {
-        margin-top: 15px;
-        margin-bottom: 15px;
+        margin-top: 12px;
+        margin-bottom: 16px;
       }
 
       .service-heading--defence {
@@ -1266,10 +1266,10 @@ header .intro-text .intro-heading {
   }
 
   .services-image-training {
-    margin-top: 0;
-    margin-bottom: 14px;
+    margin-top: 5px;
+    margin-bottom: 17px;
     height: auto;
-    width: 51%;
+    width: 49%;
   }
 
 
@@ -1400,13 +1400,14 @@ header .intro-text .intro-heading {
   .services-image-srm {
     height: auto;
     width: 50%;
+    margin-bottom: 2px;
   }
 
   .services-image-training {
-    margin-top: 0;
-    margin-bottom: 14px;
+    margin-top: 4px;
+    margin-bottom: -7px;
     height: auto;
-    width: 40%;
+    width: 46%;
   }
 
   .services-image-defence {
