@@ -1,0 +1,33 @@
+/* Risk Management page */
+.risk-fullscreen-bg {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.4)
+  ), url(../images/info_security.jpg);
+  height: 80vh;
+  background-repeat: none;
+  background-attachment: fixed;
+  /*background-position: center center;*/
+  background-position: 0px -80px;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.risk-section-heading {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.risk-section-subheading {
+  margin-top: 10;
+  margin-bottom: 30;
+}
+
+
+.bowtie-image {
+  height: auto;
+  width: 50%;
+}

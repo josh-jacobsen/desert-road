@@ -1,0 +1,32 @@
+/* Risk Management page */
+.healthandsafety-fullscreen-bg {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.4)
+  ), url(../images/city.jpg);
+  height: 80vh;
+  background-repeat: none;
+  background-attachment: fixed;
+  /*background-position: center center;*/
+  background-position: 0px -80px;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.healthandsafety-section-heading {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.healthandsafety-section-subheading {
+  margin-top: 10;
+  margin-bottom: 30;
+}
+
+.bowtie-image {
+  height: auto;
+  width: 50%;
+}
