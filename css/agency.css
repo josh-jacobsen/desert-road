@@ -150,8 +150,8 @@ h1, h2, h3, h4, h5, h6 {
 /* change the color of the nav link when the focus is on that section */
 .navbar-default .navbar-nav > .active > a {
     border-radius: 3px;
-    color: #a7a8a9; /* original #000 */
-    background-color: white; /* original hsla(45, 35%, 75%, 1.0); */
+    color: white; /* original #000 */
+    background-color: transparent; /* original hsla(45, 35%, 75%, 1.0); */
 }
 .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
     color: #a7a8a9; /* original: #fff; */
@@ -171,45 +171,6 @@ h1, h2, h3, h4, h5, h6 {
  ul li ul.dropdown-menu li a {
    color: blue;
  }*/
-
-/* Index page */
-.index-fullscreen-bg {
-  background: linear-gradient(
-    rgba(0, 0, 0, 0.35),
-    rgba(0, 0, 0, 0.35)
-  ), url(../images/king.jpg);
-  height: 100vh;
-  background-repeat: none;
-  background-attachment: fixed;
-  /*background-position: center center;*/
-  background-position: -113px 10px;
-
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-}
-
-header .intro-text .intro-lead-in {
-    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-style: italic;
-    font-size: 22px;
-    line-height: 22px;
-    margin-bottom: 25px;
-}
-header .intro-text .intro-heading {
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 50px;
-    line-height: 50px;
-    margin-bottom: 0;
-    /*color: hsla(39, 27%, 77%, 1.0); light*/
-    /*color: hsla(45, 35%, 63%, 1.0);dark*/
-    /*color: hsla(45, 35%, 75%, 1.0); /*mid range*/
-}
-
-/* End of Header section number 1 */
 
 
 
@@ -232,10 +193,7 @@ section {
 }
 
 
-section h2.section-heading {
-    font-size: 40px;
-    margin-top: 0;
-}
+
 section h3.section-subheading {
     font-size: 16px;
     font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -460,20 +418,6 @@ header .intro-text .intro-heading {
   color: hsla(45, 35%, 75%, 1.0);
 }
 
-.navbar-brand {
-  color: white;
-  /*color: hsla(45, 35%, 75%, 1.0);*/
-  /*border-color: hsla(45, 35%, 75%, 1.0);*/
-  /*font-family: "Open Sans", sans-serif;*/
-  font-family: "Montserrat", sans-serif;
-  /*text-transform: uppercase;*/
-  font-weight: 500;
-  /*border-radius: 3px;*/
-  /*font-size: 18px;*/
-  /*padding: 20px 40px;*/
-
-}
-
 section h3.section-subheading {
   line-height: 44px;
   font-size: 30px;
@@ -510,7 +454,8 @@ section h3.section-subheading {
 
 /* start of media queries for min-width:768px */
 
-@media (min-width:768px) {
+/* Changed from @media (min-width:768px) to the below*/
+@media only screen and (min-width:768px) {
   header .intro-text {
   padding-top: 200px;
   /*padding-bottom: 200px;*/
@@ -596,10 +541,15 @@ section h3.section-subheading {
     font-size: 0.9em;
     color: #a7a8a9;
 }
+}
 
-@media (min-width:768px) {
+/*@media (min-width:768px) {*/
+@media only screen and (min-width : 768px) {
   section {
-  padding: 150px 0;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 0;
+  padding-right: 0;
   }
 
   .defence-section-whatwedo {
@@ -614,7 +564,10 @@ section h3.section-subheading {
 
 }
 
-@media (min-width:768px) {
+
+
+/*@media (min-width:768px) {*/
+@media only screen and (min-width : 768px) {
   header .intro-text .intro-heading-small {
       font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
       /*text-transform: uppercase;*/
@@ -629,13 +582,125 @@ section h3.section-subheading {
 /*==========  Mobile First Method  ==========*/
 /*==========  Text Sizing  ==========*/
 
-/* Make the top navbar thicker (always present until 768px) */
+/* Before media queries: The below code sets up all the mobile-first defaults for the display on the index page*/
+
+.index-fullscreen-bg {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.35),
+    rgba(0, 0, 0, 0.35)
+  ), url(../images/king.jpg);
+  height: 85vh;
+  background-repeat: none;
+  background-attachment: fixed;
+  background-position: -360px 10px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+/* Set the navbar thickness (always present until 768px) */
 .navbar {
-  height: 85px;
+  height: 70px;
+}
+/* Make the right nav menu sit lower in the navbar to line up with brand */
+.navbar-nav {
+  margin-top: 15px;
 }
 
 /* The left brand text/logo */
 .navbar-brand {
+  float: left;
+  height: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 22px;
+  line-height: 20px;
+}
+
+/* The hamburger menu*/
+.navbar-toggle {
+  position: relative;
+  float: right;
+  padding: 9px 10px;
+  margin-top: 15px;
+  margin-right: 30px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+/* Text below the brand on the left */
+.sub-title {
+  font-size: 13px;
+  line-height: 2;
+}
+
+/* Protecting what matters */
+.intro-text {
+    padding-top: 190px;
+    padding-bottom: 50px;
+}
+
+/* Protecting what matters */
+.company-name {
+  /*margin-top: 4%;*/
+  text-align: center;
+  font-family: "Montserrat";
+}
+
+/* Protecting what matters */
+.main-text {
+  color: white;
+  margin: 0;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 50px;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+}
+
+/* Managing risk to maximize performance */
+.sub-text {
+font-size: 29px;
+font-family: 'Open Sans', sans-serif;
+color: white;
+}
+
+
+.whatwedo-row {
+  padding-top: 5%;
+  color: white;
+}
+
+header .intro-text .intro-lead-in {
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-size: 22px;
+    line-height: 22px;
+    margin-bottom: 25px;
+}
+header .intro-text .intro-heading {
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 0;
+    /*color: hsla(39, 27%, 77%, 1.0); light*/
+    /*color: hsla(45, 35%, 63%, 1.0);dark*/
+    /*color: hsla(45, 35%, 75%, 1.0); /*mid range*/
+}
+
+/* The left brand text/logo */
+.navbar-brand {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
   float: left;
   height: 50px;
   padding-top: 15px;
@@ -668,25 +733,9 @@ section h3.section-subheading {
 }
 
 /* Protecting what matters */
-header .intro-text {
-    padding-top: 230px;
-    padding-bottom: 50px;
-}
-
-/* Protecting what matters */
 .company-name {
   text-align: center;
   font-family: "Montserrat";
-}
-
-/* Protecting what matters */
-.main-text {
-  color: white;
-  margin: 0;
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 55px;
-  text-transform: uppercase;
 }
 
 /* Managing risk to maximize performance */
@@ -722,17 +771,71 @@ header .intro-text {
   font-size: 20px;
 }
 
+.container--limit-width {
+  max-width: 80%;
+}
 
+.section-heading {
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.service-heading {
+  font-size: 18px;
+}
+
+.para-text {
+  text-align: center;
+  color: #777;
+}
+
+.para-text--size {
+  font-size: 12px;
+}
+
+/* List of items on index page */
+.index-list {
+  width: 250px;
+  margin: 0 auto;
+
+  text-align: left;
+  line-height: 30px;
+}
+
+.index-list-align {
+  /*text-align: left;*/
+  line-height: 30px;
+}
+
+
+.services-image-srm {
+  height: auto;
+  width: 45%;
+}
+
+.services-image-training {
+  margin-top: 40px;
+  margin-bottom: 14px;
+  height: auto;
+  width: 36%;
+}
+
+.services-image-defence {
+  margin-top: 28px;
+  margin-bottom: 7px;
+  height: auto;
+  width: 36%;
+}
 
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
 
   .index-fullscreen-bg {
-    height: 87vh;
-    background-position: -200px 18px;
+    height: 85vh;
+    background-position: -220px 18px;
   }
-
 
   /* The left brand text/logo */
   .navbar-brand {
@@ -776,13 +879,15 @@ header .intro-text {
     color: white;
     margin: 0;
     font-weight: 500;
-    font-size: 42px;
+    font-size: 36px;
     line-height: 54px;
-    /*text-align: left;*/
     text-transform: uppercase;
     font-family: "Montserrat";
-    /*padding-left: 15px;*/
+  }
 
+  /* Managing risk to maximize performance */
+  .sub-text {
+    font-size: 25px;
   }
 
   .whatwedo-image {
@@ -802,7 +907,7 @@ header .intro-text {
 @media only screen and (min-width : 480px) {
 
   .index-fullscreen-bg {
-    background-position: -450px 18px;
+    background-position: -86px -12px;
   }
 
   /* The left brand text/logo */
@@ -846,17 +951,61 @@ header .intro-text {
     color: white;
     margin: 0;
     font-weight: 500;
-    font-size: 68px;
-    line-height: 80px;
+    font-size: 38px;
+    line-height: 47px;
     /*text-align: left;*/
     text-transform: uppercase;
     font-family: "Montserrat";
     /*padding-left: 15px;*/
   }
+
+  /* Managing risk to maximize performance */
+  .sub-text {
+    font-size: 28px;
+  }
+
   .whatwedo-row {
     padding-top: 5%;
     color: white;
   }
+
+  .container--limit-width {
+    max-width: 80%;
+  }
+
+  .section-heading {
+      font-size: 34px;
+      margin-top: 0;
+      margin-bottom: 40px;
+  }
+
+  .service-heading {
+    font-size: 22px;
+  }
+
+  .para-text {
+    text-align: center;
+    color: #777;
+  }
+
+  .para-text--size {
+    font-size: 15px;
+  }
+
+  /* List of items on index page */
+  .index-list {
+    width: 250px;
+    margin: 0 auto;
+
+    text-align: left;
+    line-height: 30px;
+  }
+
+  .index-list-align {
+    /*text-align: left;*/
+    line-height: 30px;
+  }
+
 
 }
 
@@ -864,13 +1013,13 @@ header .intro-text {
 @media only screen and (min-width : 768px) {
 
   .index-fullscreen-bg {
-    background-position: -295px -10px;
+    height: 100vh;
+    background-position: 0px 0px;
   }
-
 
   /* Make the navbar thicker when it drops down from the CBP Animated header */
   .navbar {
-    /*height: 96px;*/
+    height: 85px;
   }
   /* Make the right nav menu sit lower in the navbar to line up with brand */
   .navbar-nav {
@@ -894,7 +1043,7 @@ header .intro-text {
   }
 
   header .intro-text {
-      padding-top: 280px;
+      padding-top: 240px;
       padding-bottom: 50px;
   }
 
@@ -910,7 +1059,7 @@ header .intro-text {
     color: white;
     margin: 0;
     font-weight: 500;
-    font-size: 40px;
+    font-size: 45px;
     line-height: 60px;
     text-transform: uppercase;
     font-family: "Montserrat";
@@ -919,7 +1068,7 @@ header .intro-text {
 
 /* Managing risk to maximize performance */
 .sub-text {
-  font-size: 29px;
+  font-size: 33px;
     }
 
 
@@ -928,10 +1077,71 @@ header .intro-text {
     color: white;
   }
 
+  .container--limit-width {
+    max-width: 70%;
+  }
+
+  .section-heading {
+      font-size: 40px;
+      margin-top: 0;
+      margin-bottom: 40px;
+  }
+
+  .service-heading {
+    font-size: 22px;
+  }
+
+  .para-text {
+    text-align: center;
+    color: #777;
+  }
+
+  .para-text--size {
+    font-size: 15px;
+  }
+
+  /* List of items on index page */
+  .index-list {
+    width: 250px;
+    margin: 0 auto;
+    text-align: left;
+    line-height: 30px;
+  }
+
+  .index-list-align {
+    /*text-align: left;*/
+    line-height: 30px;
+  }
+
+
+  .services-image-srm {
+    height: auto;
+    width: 33%;
+  }
+
+  .services-image-training {
+    margin-top: 40px;
+    margin-bottom: 14px;
+    height: auto;
+    width: 26%;
+  }
+
+  .services-image-defence {
+    margin-top: 28px;
+    margin-bottom: 7px;
+    height: auto;
+    width: 26%;
+  }
+
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
+
+  .index-fullscreen-bg {
+    background-position: 0px -10px;
+  }
+
 
   /* Make the navbar thicker when it drops down from the CBP Animated header */
   /*.navbar {
@@ -947,20 +1157,20 @@ header .intro-text {
     float: left;
     height: 50px;
     padding: 15px 15px;
-    font-size: 29px;
+    font-size: 31px;
     line-height: 20px;
   }
 
   /* Text below the brand on the left */
-  /*.sub-title {
-    font-size: 17px;
+  .sub-title {
+    font-size: 18px;
     color: white;
     line-height: 2;
-  }*/
+  }
 
 
   header .intro-text {
-      padding-top: 350px;
+      padding-top: 215px;
       padding-bottom: 50px;
   }
 
@@ -975,7 +1185,7 @@ header .intro-text {
     color: white;
     margin: 0;
     font-weight: 500;
-    font-size: 45px;
+    font-size: 52px;
     line-height: 68px;
     text-transform: uppercase;
     font-family: "Montserrat";
@@ -983,13 +1193,86 @@ header .intro-text {
 
   /* Managing risk to maximize performance */
   .sub-text {
-    font-size: 37px;
+    font-size: 38px;
+  }
+
+  /* What We Do, Contact Us, etc. */
+  .section-heading {
+      font-size: 45px;
+          margin-top: 0;
+          margin-bottom: 40px;
       }
+
+      /* SRM, Defence Solutions, Training */
+      .service-heading {
+        font-size: 18px;
+      }
+
+      .service-heading--srm {
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+
+      .service-heading--defence {
+        margin-top: 32px;
+        margin-bottom: 27px;
+      }
+
+      .service-heading--training {
+        margin-top: 27px;
+        margin-bottom: 25px;
+      }
+
+      /* Text of SRM, Defence Solutions, Training */
+
+      .para-text {
+        text-align: left;
+        color: #777;
+      }
+
+      .para-text--size {
+        font-size: 15px;
+      }
+
+      /* List of items on index page */
+      .index-list {
+        width: 100%;
+        margin: 0;
+        text-align: left;
+        line-height: 30px;
+      }
+
+      .index-list-align {
+        /*text-align: left;*/
+        line-height: 30px;
+      }
+
 
   .whatwedo-row {
     padding-top: 15%;
     color: white;
   }
+
+  .services-image-srm {
+    height: auto;
+    width: 60%;
+  }
+
+  .services-image-defence {
+    margin-top: 0;
+    margin-bottom: 7px;
+    height: auto;
+    width: 53%;
+  }
+
+  .services-image-training {
+    margin-top: 0;
+    margin-bottom: 14px;
+    height: auto;
+    width: 51%;
+  }
+
+
 
 
 }
@@ -1031,7 +1314,7 @@ header .intro-text {
   }
 
   header .intro-text {
-      padding-top: 200px;
+      padding-top: 250px;
       padding-bottom: 50px;
   }
 
@@ -1056,6 +1339,45 @@ header .intro-text {
       font-size: 44px;
   }
 
+  /* What We Do, Contact Us, etc. */
+  .section-heading {
+      font-size: 50px;
+      margin-top: 0;
+      margin-bottom: 40px;
+  }
+
+  /* SRM, Defence Solutions, Training */
+  .service-heading {
+    font-size: 22px;
+  }
+
+  .service-heading--srm {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .service-heading--defence {
+    margin-top: 32px;
+    margin-bottom: 27px;
+  }
+
+  .service-heading--training {
+    margin-top: 44px;
+    margin-bottom: 29px;
+  }
+
+  /* Text of SRM, Defence Solutions, Training */
+
+  .para-text--size {
+    font-size: 16px;
+  }
+
+  /* List of items on index page */
+  .index-list {
+    text-align: left;
+    line-height: 30px;
+  }
+
   /* Project Management & SRM Section */
   .explanation {
     font-size: 35px;
@@ -1074,9 +1396,30 @@ header .intro-text {
     padding-top: 15%;
     color: white;
   }
+
+  .services-image-srm {
+    height: auto;
+    width: 50%;
+  }
+
+  .services-image-training {
+    margin-top: 0;
+    margin-bottom: 14px;
+    height: auto;
+    width: 40%;
+  }
+
+  .services-image-defence {
+    margin-top: 0;
+    margin-bottom: 7px;
+    height: auto;
+    width: 47%;
+  }
 }
 
-.services-image {
-  height: auto;
-  width: 50%;
-}
+
+/* SVGs */
+
+
+
+/* SVGs End */
