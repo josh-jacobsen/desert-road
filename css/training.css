@@ -1,0 +1,33 @@
+/* Training page */
+.training-fullscreen-bg {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.35),
+    rgba(0, 0, 0, 0.35)
+  ), url(../images/mountain.jpg);
+  height: 80vh;
+  background-repeat: none;
+  background-attachment: fixed;
+  /*background-position: center center;*/
+  background-position: 0px -80px;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.training-section-heading {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.training-section-subheading {
+  margin-top: 10;
+  margin-bottom: 30;
+}
+
+
+.bowtie-image {
+  height: auto;
+  width: 50%;
+}

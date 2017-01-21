@@ -1,3 +1,5 @@
+/* this is a test message */
+
 html, body {
     overflow-x: hidden;
     font-family: "Montserrat";
@@ -15,10 +17,10 @@ a, a:hover, a:focus, a:active, a.active {
     outline: 0;
 }
 a {
-    color: #fed136; /* origional #fed136 */
+    color: hsla(45, 35%, 75%, 1.0); /* original #fed136 */
 }
 a:hover, a:focus, a:active, a.active {
-    color: #fec503; /* origional #fec503 */
+    color: hsla(45, 35%, 75%, 1.0); /* original #fec503 */
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: "Montserrat";
@@ -37,17 +39,17 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #222;
 }
 .btn-primary {
-    color: #fff;
-    background-color: #fed136;
-    border-color: #fed136;
+    color: black; /* origional: #fff; */
+    background-color: hsla(45, 35%, 75%, 1.0); /* origional: #fed136; */
+    border-color: hsla(45, 35%, 75%, 1.0); /* origional: #fed136; */
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-weight: 700;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
-    color: #fff;
-    background-color: #fec503;
-    border-color: #f6bf01;
+    color: black; /* origional: #fff; */
+    background-color: hsla(45, 35%, 75%, 1.0); /* origional: #fec503; */
+    border-color: hsla(45, 35%, 75%, 1.0);/* origional: #f6bf01; */
 }
 .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
     background-image: none;
@@ -89,18 +91,21 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #fff;
 }
 
-
-
 .navbar-default {
     background-color: #222;
     border-color: transparent;
+    /*uncomment the below code for navbar shadow */
+    /*-webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;*/
 }
 .navbar-default .navbar-brand {
     /*color: #fed136;*/
     /*font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;*/
 }
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:active, .navbar-default .navbar-brand.active {
-    color: #fec503;
+    /*color: hsla(45, 35%, 75%, 1.0);  original: #fec503; */
+    color: white;
 }
 
 /*.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:active, .navbar-default .navbar-brand.active {
@@ -125,64 +130,47 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     font-weight: 400;
     letter-spacing: 1px;
-    color: #fff;
+    color: white; /* original #fff */
 }
+
+/* set colour of clicked links */
 .navbar-default .nav li a:hover, .navbar-default .nav li a:focus {
-    color: #fed136;
+    color: white; /* original: #fed136; */
     outline: 0;
 }
-.navbar-default .navbar-nav>.active>a {
-    border-radius: 0;
-    color: #fff;
-    background-color: #fed136;
+
+/* options for links in dropdown menus*/
+.navbar-default .nav .dropdown .dropdown-menu a {
+    color: #a7a8a9;
+    background-color: white;
+    font-size: 14px;
+    text-transform: none;
+}
+
+/* change the color of the nav link when the focus is on that section */
+.navbar-default .navbar-nav > .active > a {
+    border-radius: 3px;
+    color: white; /* original #000 */
+    background-color: transparent; /* original hsla(45, 35%, 75%, 1.0); */
 }
 .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
-    color: #fff;
-    background-color: #fec503;
+    color: #a7a8a9; /* original: #fff; */
+    background-color: white; /* original: #fec503; */
 }
 
+/* makes to nav menu dropdown on hover, not click*/
+/*.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+ }*/
 
-/* Header section number 1 */
+ /*.dropdown .open {
+   background-color: blue;
+ }
 
-
-header {
-    background: linear-gradient(
-      rgba(0, 0, 0, 0.4),
-      rgba(0, 0, 0, 0.4)
-    ), url(../images/skydive_3.jpg);
-    height: 100vh;
-    background-repeat: none;
-    background-attachment: fixed;
-    background-position: center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-    text-align: center;
-    color: #fff;
-}
-
-
-header .intro-text .intro-lead-in {
-    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-style: italic;
-    font-size: 22px;
-    line-height: 22px;
-    margin-bottom: 25px;
-}
-header .intro-text .intro-heading {
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 50px;
-    line-height: 50px;
-    margin-bottom: 0;
-    /*color: hsla(39, 27%, 77%, 1.0); light*/
-    /*color: hsla(45, 35%, 63%, 1.0);dark*/
-    /*color: hsla(45, 35%, 75%, 1.0); /*mid range*/
-}
-
-/* End of Header section number 1 */
+ ul li ul.dropdown-menu li a {
+   color: blue;
+ }*/
 
 
 
@@ -193,10 +181,19 @@ section {
     padding-bottom: 100px;
     padding-left: 0px;
 }
-section h2.section-heading {
-    font-size: 40px;
-    margin-top: 0;
+
+.defence-section-whatwedo {
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
+
+.risk-section-whatwedo {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+
+
 section h3.section-subheading {
     font-size: 16px;
     font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -309,7 +306,7 @@ input {
     color: #fff;
 }
 
-.howwedoit-image {
+.contactus {
     background: linear-gradient(
       rgba(0, 0, 0, 0.35),
       rgba(0, 0, 0, 0.35)
@@ -326,9 +323,6 @@ input {
     color: #fff;
 }
 
-/*.whatwedo {
-  padding-bottom: 3%;
-}*/
 
 .portfolio-caption {
   background: linear-gradient(
@@ -340,8 +334,8 @@ input {
 }
 
 .company-name {
-  margin-top: 4%;
-  text-align: center;
+  /*margin-top: 4%;*/
+  /*text-align: center;*/
   font-family: "Montserrat";
 }
 
@@ -424,18 +418,6 @@ header .intro-text .intro-heading {
   color: hsla(45, 35%, 75%, 1.0);
 }
 
-.navbar-brand {
-  color: hsla(45, 35%, 75%, 1.0);
-  /*border-color: hsla(45, 35%, 75%, 1.0);*/
-  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  /*text-transform: uppercase;*/
-  font-weight: 500;
-  /*border-radius: 3px;*/
-  /*font-size: 18px;*/
-  /*padding: 20px 40px;*/
-
-}
-
 section h3.section-subheading {
   line-height: 44px;
   font-size: 30px;
@@ -472,7 +454,8 @@ section h3.section-subheading {
 
 /* start of media queries for min-width:768px */
 
-@media (min-width:768px) {
+/* Changed from @media (min-width:768px) to the below*/
+@media only screen and (min-width:768px) {
   header .intro-text {
   padding-top: 200px;
   /*padding-bottom: 200px;*/
@@ -494,48 +477,97 @@ section h3.section-subheading {
     margin-bottom: 0;
   }
 
+  /* Sets the nav bar properties before scrolling down */
   .navbar-default {
-    background-color: transparent;
-    padding: 25px 0;
+    background-color: transparent; /* original: transparent */
+    padding: 15px 0;
     -webkit-transition: padding .3s;
     -moz-transition: padding .3s;
     transition: padding .3s;
     border: 0;
   }
+  /* animates the brand text/image to shrink slowly*/
   .navbar-default .navbar-brand {
       /*font-size: 2em;*/
       -webkit-transition: all .3s;
       -moz-transition: all .3s;
       transition: all .3s;
   }
-  .navbar-default .navbar-nav>.active>a {
+
+  /* animates the right nav bar to shrink slowly*/
+  .navbar-default .nav li a {
+      /*font-size: 2em;*/
+      -webkit-transition: all .3s;
+      -moz-transition: all .3s;
+      transition: all .3s;
+  }
+
+  .navbar-nav > li > a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      line-height: 15px;
+  }
+
+  .navbar-default .navbar-nav > .active > a {
       border-radius: 3px;
   }
+
+  /* sets the color of the nav bar on scroll down */
   .navbar-default.navbar-shrink {
-      background-color: #222;
+      background-color: white; /* original #222 */
       padding: 10px 0;
+      -webkit-box-shadow: 0 8px 6px -6px #999;
+      -moz-box-shadow: 0 8px 6px -6px #999;
+      box-shadow: 0 8px 6px -6px #999;
+
+
   }
 
   /*this makes the main company name shrink on the scroll down*/
   .navbar-default.navbar-shrink .navbar-brand {
-      font-size: 1.5em;
+    color: #a7a8a9;
+    font-size: 1.5em;
   }
 
   /*this makes the subheading shrink on the scroll down*/
   .navbar-default.navbar-shrink .sub-title {
-      font-size: .6em;
-      line-height: 2px;
-
+    color: #a7a8a9;
+    font-size: .6em;
+    line-height: 2px;
   }
+
+  /*attributes of the right hand nav menu on the scroll down*/
+  .navbar-default.navbar-shrink .nav li a {
+    font-size: 0.9em;
+    color: #a7a8a9;
+}
 }
 
-@media (min-width:768px) {
+/*@media (min-width:768px) {*/
+@media only screen and (min-width : 768px) {
   section {
-  padding: 150px 0;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 0;
+  padding-right: 0;
   }
+
+  .defence-section-whatwedo {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .risk-section-whatwedo {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
 }
 
-@media (min-width:768px) {
+
+
+/*@media (min-width:768px) {*/
+@media only screen and (min-width : 768px) {
   header .intro-text .intro-heading-small {
       font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
       /*text-transform: uppercase;*/
@@ -550,13 +582,125 @@ section h3.section-subheading {
 /*==========  Mobile First Method  ==========*/
 /*==========  Text Sizing  ==========*/
 
-/* Make the top navbar thicker (always present until 768px) */
+/* Before media queries: The below code sets up all the mobile-first defaults for the display on the index page*/
+
+.index-fullscreen-bg {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.35),
+    rgba(0, 0, 0, 0.35)
+  ), url(../images/king.jpg);
+  height: 85vh;
+  background-repeat: none;
+  background-attachment: fixed;
+  background-position: -360px 10px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+/* Set the navbar thickness (always present until 768px) */
 .navbar {
-  height: 65px;
+  height: 70px;
+}
+/* Make the right nav menu sit lower in the navbar to line up with brand */
+.navbar-nav {
+  margin-top: 15px;
 }
 
 /* The left brand text/logo */
 .navbar-brand {
+  float: left;
+  height: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 22px;
+  line-height: 20px;
+}
+
+/* The hamburger menu*/
+.navbar-toggle {
+  position: relative;
+  float: right;
+  padding: 9px 10px;
+  margin-top: 15px;
+  margin-right: 30px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+/* Text below the brand on the left */
+.sub-title {
+  font-size: 13px;
+  line-height: 2;
+}
+
+/* Protecting what matters */
+.intro-text {
+    padding-top: 190px;
+    padding-bottom: 50px;
+}
+
+/* Protecting what matters */
+.company-name {
+  /*margin-top: 4%;*/
+  text-align: center;
+  font-family: "Montserrat";
+}
+
+/* Protecting what matters */
+.main-text {
+  color: white;
+  margin: 0;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 50px;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+}
+
+/* Managing risk to maximize performance */
+.sub-text {
+font-size: 29px;
+font-family: 'Open Sans', sans-serif;
+color: white;
+}
+
+
+.whatwedo-row {
+  padding-top: 5%;
+  color: white;
+}
+
+header .intro-text .intro-lead-in {
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-size: 22px;
+    line-height: 22px;
+    margin-bottom: 25px;
+}
+header .intro-text .intro-heading {
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 0;
+    /*color: hsla(39, 27%, 77%, 1.0); light*/
+    /*color: hsla(45, 35%, 63%, 1.0);dark*/
+    /*color: hsla(45, 35%, 75%, 1.0); /*mid range*/
+}
+
+/* The left brand text/logo */
+.navbar-brand {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
   float: left;
   height: 50px;
   padding-top: 15px;
@@ -567,9 +711,10 @@ section h3.section-subheading {
   line-height: 20px;
 }
 
-/* The left sub-text below the brand */
+/* Text below the brand on the left */
 .sub-title {
   font-size: 13px;
+  /*color: hsla(45, 35%, 75%, 1.0);*/
   color: white;
 }
 
@@ -588,32 +733,109 @@ section h3.section-subheading {
 }
 
 /* Protecting what matters */
-header .intro-text {
-    padding-top: 230px;
-    padding-bottom: 50px;
-}
-
-/* Protecting what matters */
 .company-name {
+  text-align: center;
+  font-family: "Montserrat";
+}
+
+/* Managing risk to maximize performance */
+.sub-text {
+  font-family: 'Open Sans', sans-serif;
+  color: white; /* hsla(45, 35%, 75%, 1.0); */
+  font-size: 24px;
+}
+
+.col-centered {
+  float: none;
+  margin: 0 auto;
+}
+
+/* Sections */
+.whatwedo-image {
+      padding-top: 12px;
+      padding-right: 0;
+      padding-bottom: 0;
+      padding-left: 0;
+}
+
+.explanation {
+  font-size: 30px;
+  text-align: center;
+}
+
+.explanation-text {
+  font-size: 16px;
+}
+
+.explanation-text-margin-bottom {
+  font-size: 20px;
+}
+
+.container--limit-width {
+  max-width: 80%;
+}
+
+.section-heading {
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.service-heading {
+  font-size: 18px;
+}
+
+.para-text {
+  text-align: center;
+  color: #777;
+}
+
+.para-text--size {
+  font-size: 12px;
+}
+
+/* List of items on index page */
+.index-list {
+  width: 250px;
+  margin: 0 auto;
+
   text-align: left;
-  font-family: "Montserrat";
+  line-height: 30px;
 }
 
-/* Protecting what matters */
-.main-text {
-  color: white;
-  margin: 0;
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 65px;
-  text-transform: uppercase;
-  font-family: "Montserrat";
+.index-list-align {
+  /*text-align: left;*/
+  line-height: 30px;
 }
 
+
+.services-image-srm {
+  height: auto;
+  width: 45%;
+}
+
+.services-image-training {
+  margin-top: 40px;
+  margin-bottom: 14px;
+  height: auto;
+  width: 36%;
+}
+
+.services-image-defence {
+  margin-top: 28px;
+  margin-bottom: 7px;
+  height: auto;
+  width: 36%;
+}
 
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
+
+  .index-fullscreen-bg {
+    height: 85vh;
+    background-position: -220px 18px;
+  }
 
   /* The left brand text/logo */
   .navbar-brand {
@@ -626,11 +848,11 @@ header .intro-text {
     font-size: 22px;
     line-height: 20px;
   }
-  /* The left sub-text below the brand */
-  .sub-title {
+  /* Text below the brand on the left */
+  /*.sub-title {
     font-size: 13px;
     color: white;
-  }
+  }*/
 
   /* Hamburger menu */
   .navbar-toggle {
@@ -646,42 +868,47 @@ header .intro-text {
     border-radius: 4px;
   }
 
-    header .intro-text {
-      padding-top: 220px;
-      padding-bottom: 50px;
-    }
+  /* Protecting what matters */
+  header .intro-text {
+    padding-top: 220px;
+    padding-bottom: 50px;
+  }
 
-    .main-text {
-      color: white;
-      margin: 0;
-      font-weight: 500;
-      font-size: 48px;
-      line-height: 80px;
-      text-align: left;
-      text-transform: uppercase;
-      font-family: "Montserrat";
-      padding-left: 15px;
+  /* Protecting what matters */
+  .main-text {
+    color: white;
+    margin: 0;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 54px;
+    text-transform: uppercase;
+    font-family: "Montserrat";
+  }
 
-    }
-
+  /* Managing risk to maximize performance */
+  .sub-text {
+    font-size: 25px;
+  }
 
   .whatwedo-image {
-        padding-top: 12px;
+        padding-top: 28px;
         padding-right: 0;
         padding-bottom: 0;
         padding-left: 0;
     }
 
     .explanation-text {
-      font-size: 18px;
+      font-size: 16px;
     }
-    .whatwedo-row {
-      padding-top: 6%;
-    }
+
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
+
+  .index-fullscreen-bg {
+    background-position: -86px -12px;
+  }
 
   /* The left brand text/logo */
   .navbar-brand {
@@ -695,11 +922,11 @@ header .intro-text {
     line-height: 20px;
   }
 
-  /* The left sub-text below the brand */
-  .sub-title {
+  /* Text below the brand on the left */
+  /*.sub-title {
     font-size: 13px;
     color: white;
-  }
+  }*/
 
   /* Hamburger menu */
   .navbar-toggle {
@@ -724,30 +951,79 @@ header .intro-text {
     color: white;
     margin: 0;
     font-weight: 500;
-    font-size: 68px;
-    line-height: 80px;
-    text-align: left;
+    font-size: 38px;
+    line-height: 47px;
+    /*text-align: left;*/
     text-transform: uppercase;
     font-family: "Montserrat";
-    padding-left: 15px;
+    /*padding-left: 15px;*/
   }
+
+  /* Managing risk to maximize performance */
+  .sub-text {
+    font-size: 28px;
+  }
+
   .whatwedo-row {
     padding-top: 5%;
     color: white;
   }
+
+  .container--limit-width {
+    max-width: 80%;
+  }
+
+  .section-heading {
+      font-size: 34px;
+      margin-top: 0;
+      margin-bottom: 40px;
+  }
+
+  .service-heading {
+    font-size: 22px;
+  }
+
+  .para-text {
+    text-align: center;
+    color: #777;
+  }
+
+  .para-text--size {
+    font-size: 15px;
+  }
+
+  /* List of items on index page */
+  .index-list {
+    width: 250px;
+    margin: 0 auto;
+
+    text-align: left;
+    line-height: 30px;
+  }
+
+  .index-list-align {
+    /*text-align: left;*/
+    line-height: 30px;
+  }
+
 
 }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
 
+  .index-fullscreen-bg {
+    height: 100vh;
+    background-position: 0px 0px;
+  }
+
   /* Make the navbar thicker when it drops down from the CBP Animated header */
   .navbar {
-    height: 80px;
+    height: 85px;
   }
   /* Make the right nav menu sit lower in the navbar to line up with brand */
   .navbar-nav {
-    margin-top: 5px;
+    margin-top: 15px;
   }
 
   /* The left brand text/logo */
@@ -759,22 +1035,22 @@ header .intro-text {
     line-height: 20px;
   }
 
-  /* The left sub-text below the brand */
+  /* Text below the brand on the left */
   .sub-title {
     font-size: 17px;
-    color: white;
+    /*color: white;*/
     line-height: 2;
   }
 
   header .intro-text {
-      padding-top: 220px;
+      padding-top: 240px;
       padding-bottom: 50px;
   }
 
   /* Protecting what matters */
   .company-name {
-    margin-top: 4%;
-    text-align: left;
+    /*margin-top: 4%;*/
+    /*text-align: left;*/
     font-family: "Montserrat";
   }
 
@@ -783,15 +1059,78 @@ header .intro-text {
     color: white;
     margin: 0;
     font-weight: 500;
-    font-size: 68px;
-    line-height: 80px;
+    font-size: 45px;
+    line-height: 60px;
     text-transform: uppercase;
     font-family: "Montserrat";
   }
 
+
+/* Managing risk to maximize performance */
+.sub-text {
+  font-size: 33px;
+    }
+
+
   .whatwedo-row {
     padding-top: 5%;
     color: white;
+  }
+
+  .container--limit-width {
+    max-width: 70%;
+  }
+
+  .section-heading {
+      font-size: 40px;
+      margin-top: 0;
+      margin-bottom: 40px;
+  }
+
+  .service-heading {
+    font-size: 22px;
+  }
+
+  .para-text {
+    text-align: center;
+    color: #777;
+  }
+
+  .para-text--size {
+    font-size: 15px;
+  }
+
+  /* List of items on index page */
+  .index-list {
+    width: 250px;
+    margin: 0 auto;
+    text-align: left;
+    line-height: 30px;
+  }
+
+  .index-list-align {
+    /*text-align: left;*/
+    line-height: 30px;
+  }
+
+
+  .services-image-srm {
+    height: auto;
+    width: 33%;
+  }
+
+  .services-image-training {
+    margin-top: 40px;
+    margin-bottom: 14px;
+    height: auto;
+    width: 26%;
+  }
+
+  .services-image-defence {
+    margin-top: 28px;
+    margin-bottom: 7px;
+    height: auto;
+    width: 26%;
   }
 
 }
@@ -799,13 +1138,18 @@ header .intro-text {
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
 
-  /* Make the navbar thicker when it drops down from the CBP Animated header */
-  .navbar {
-    height: 80px;
+  .index-fullscreen-bg {
+    background-position: 0px -10px;
   }
+
+
+  /* Make the navbar thicker when it drops down from the CBP Animated header */
+  /*.navbar {
+    height: 80px;
+  }*/
   /* Make the right nav menu sit lower in the navbar to line up with brand */
   .navbar-nav {
-    margin-top: 5px;
+    /*margin-top: 5px;*/
   }
 
   /* The left brand text/logo */
@@ -813,27 +1157,27 @@ header .intro-text {
     float: left;
     height: 50px;
     padding: 15px 15px;
-    font-size: 29px;
+    font-size: 31px;
     line-height: 20px;
   }
 
-  /* The left sub-text below the brand */
+  /* Text below the brand on the left */
   .sub-title {
-    font-size: 17px;
+    font-size: 18px;
     color: white;
     line-height: 2;
   }
 
 
   header .intro-text {
-      padding-top: 180px;
+      padding-top: 215px;
       padding-bottom: 50px;
   }
 
   /* Protecting what matters*/
   .company-name {
     margin-top: 4%;
-    text-align: left;
+    /*text-align: left;*/
     font-family: "Montserrat";
   }
 
@@ -841,36 +1185,112 @@ header .intro-text {
     color: white;
     margin: 0;
     font-weight: 500;
-    font-size: 68px;
-    line-height: 80px;
+    font-size: 52px;
+    line-height: 68px;
     text-transform: uppercase;
     font-family: "Montserrat";
   }
+
+  /* Managing risk to maximize performance */
+  .sub-text {
+    font-size: 38px;
+  }
+
+  /* What We Do, Contact Us, etc. */
+  .section-heading {
+      font-size: 45px;
+          margin-top: 0;
+          margin-bottom: 40px;
+      }
+
+      /* SRM, Defence Solutions, Training */
+      .service-heading {
+        font-size: 18px;
+      }
+
+      .service-heading--srm {
+        margin-top: 12px;
+        margin-bottom: 16px;
+      }
+
+      .service-heading--defence {
+        margin-top: 32px;
+        margin-bottom: 27px;
+      }
+
+      .service-heading--training {
+        margin-top: 27px;
+        margin-bottom: 25px;
+      }
+
+      /* Text of SRM, Defence Solutions, Training */
+
+      .para-text {
+        text-align: left;
+        color: #777;
+      }
+
+      .para-text--size {
+        font-size: 15px;
+      }
+
+      /* List of items on index page */
+      .index-list {
+        width: 100%;
+        margin: 0;
+        text-align: left;
+        line-height: 30px;
+      }
+
+      .index-list-align {
+        /*text-align: left;*/
+        line-height: 30px;
+      }
+
+
   .whatwedo-row {
     padding-top: 15%;
     color: white;
   }
 
-  .col-centered {
-    float: none;
+  .services-image-srm {
+    height: auto;
+    width: 60%;
+  }
+
+  .services-image-defence {
     margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 10%;
-    margin-right: auto;
-}
+    margin-bottom: 7px;
+    height: auto;
+    width: 53%;
+  }
+
+  .services-image-training {
+    margin-top: 5px;
+    margin-bottom: 17px;
+    height: auto;
+    width: 49%;
+  }
+
+
+
 
 }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
 
-  /*Make the navbar thicker when it drops down from the CBP Animated header*/
-  .navbar {
-    height: 80px;
+  .index-fullscreen-bg {
+    background-position: 0px -37px;
   }
+
+  /*Make the navbar thicker when it drops down from the CBP Animated header*/
+  /*.navbar {
+    height: 80px;
+  }*/
   /*make the right nav menu sit lower in the navbar to line up with brand*/
   .navbar-nav {
-    margin-top: 5px;
+    /*margin-top: 5px;*/
   }
 
   /* The left brand text/logo */
@@ -882,27 +1302,25 @@ header .intro-text {
     line-height: 20px;
   }
 
-  /* The left sub-text below the brand */
+  /* The left text below the brand */
   .sub-title {
     font-size: 23px;
-    color: white;
-    line-height: 2;
+    /*color: white;
+    line-height: 2;*/
   }
 
   .main-heading-navbar {
     height: 50px;
   }
 
-
-
   header .intro-text {
-      padding-top: 170px;
+      padding-top: 250px;
       padding-bottom: 50px;
   }
 
   .company-name {
     margin-top: 4%;
-    text-align: left;
+    /*text-align: left;*/
     font-family: "Montserrat";
   }
 
@@ -910,52 +1328,99 @@ header .intro-text {
     color: white;
     margin: 0;
     font-weight: 500;
-    font-size: 72px;
-    line-height: 96px;
+    font-size: 60px;
+    line-height: 80px;
     text-transform: uppercase;
     font-family: "Montserrat";
   }
+
+  /* Managing risk to maximize performance */
+  .sub-text {
+      font-size: 44px;
+  }
+
+  /* What We Do, Contact Us, etc. */
+  .section-heading {
+      font-size: 50px;
+      margin-top: 0;
+      margin-bottom: 40px;
+  }
+
+  /* SRM, Defence Solutions, Training */
+  .service-heading {
+    font-size: 22px;
+  }
+
+  .service-heading--srm {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .service-heading--defence {
+    margin-top: 32px;
+    margin-bottom: 27px;
+  }
+
+  .service-heading--training {
+    margin-top: 44px;
+    margin-bottom: 29px;
+  }
+
+  /* Text of SRM, Defence Solutions, Training */
+
+  .para-text--size {
+    font-size: 16px;
+  }
+
+  /* List of items on index page */
+  .index-list {
+    text-align: left;
+    line-height: 30px;
+  }
+
+  /* Project Management & SRM Section */
+  .explanation {
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .explanation-text {
+    font-size: 20px;
+  }
+
+  .explanation-text-margin-bottom {
+    font-size: 20px;
+  }
+
   .whatwedo-row {
     padding-top: 15%;
     color: white;
   }
 
+  .services-image-srm {
+    height: auto;
+    width: 50%;
+    margin-bottom: 2px;
+  }
 
+  .services-image-training {
+    margin-top: 4px;
+    margin-bottom: -7px;
+    height: auto;
+    width: 46%;
+  }
 
-
+  .services-image-defence {
+    margin-top: 0;
+    margin-bottom: 7px;
+    height: auto;
+    width: 47%;
+  }
 }
 
 
+/* SVGs */
 
-/* end of media queries for min-width:768px */
 
-/*@media (min-width:768px) {
-    header .intro-text {
-    padding-top: 200px;
-    padding-bottom: 200px;
-  }
-  header .intro-text .intro-lead-in {
-      font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-      font-style: italic;
-      font-size: 33px;
-      line-height: 40px;
-      margin-bottom: 130px;
-  }
-  header .intro-text .intro-heading {
-      font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-      text-transform: uppercase;
-      font-weight: 700;
-      font-size: 75px;
-      line-height: 75px;
-      margin-bottom: 0;
-  }
 
-  header .intro-text .intro-heading-small {
-      font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-      text-transform: uppercase;
-      font-weight: 700;
-      font-size: 43px;
-      line-height: 75px;
-      margin-bottom: 50px;
-  }
-}*/
+/* SVGs End */
