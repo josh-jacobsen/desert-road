@@ -1,4 +1,24 @@
-/* this is a test message */
+/* Color variables */
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+  line-height: 1.75;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 14px;
+}
 
 html, body {
     overflow-x: hidden;
@@ -6,9 +26,18 @@ html, body {
     width: 100%;
 }
 
+/* Sets text size for text within containers*/
+.text-container {
+  font-size: 1rem;
+}
+
 p {
-    font-size: 14px;
-    line-height: 1.75;
+    font-size: 1em;
+    display: inline-block;
+    box-decoration-break: clone;
+    -o-box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+
 }
 p.large {
     font-size: 16px;
@@ -27,8 +56,18 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     /*font-weight: 700;*/
     font-weight: 500;
-
 }
+
+
+/*Keeps bullet points lined up with surrounding text */
+ul  {
+ padding-left:0;
+}
+ul li  {
+ list-style-position:inside
+}
+/**/
+
 .img-centered {
     margin: 0 auto;
 }
@@ -791,7 +830,9 @@ header .intro-text .intro-heading {
 }
 
 .para-text--size {
-  font-size: 12px;
+  /*font-size: 12px;*/
+  /*font-size: 0.8em;*/
+
 }
 
 /* List of items on index page */
@@ -1352,24 +1393,25 @@ header .intro-text .intro-heading {
   }
 
   .service-heading--srm {
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 34px;
+    margin-bottom: 27px;
   }
 
   .service-heading--defence {
     margin-top: 32px;
-    margin-bottom: 27px;
+    margin-bottom: 28px;
   }
 
   .service-heading--training {
-    margin-top: 44px;
+    margin-top: 50px;
     margin-bottom: 29px;
   }
 
   /* Text of SRM, Defence Solutions, Training */
 
   .para-text--size {
-    font-size: 16px;
+    /*font-size: 16px;*/
+    font-size: 1em;
   }
 
   /* List of items on index page */
@@ -1398,23 +1440,24 @@ header .intro-text .intro-heading {
   }
 
   .services-image-srm {
-    height: auto;
-    width: 50%;
+    margin-top: 4px;
     margin-bottom: 2px;
+    height: auto;
+    width: 42%;
   }
 
   .services-image-training {
     margin-top: 4px;
     margin-bottom: -7px;
     height: auto;
-    width: 46%;
+    width: 37%;
   }
 
   .services-image-defence {
     margin-top: 0;
     margin-bottom: 7px;
     height: auto;
-    width: 47%;
+    width: 41%;
   }
 }
 
