@@ -10,6 +10,7 @@
 }
 
 body {
+  font-family: "Montserrat", Tahoma, Geneva, sans-serif;
   line-height: 1.75;
 }
 
@@ -20,7 +21,6 @@ html {
 
 html, body {
     overflow-x: hidden;
-    font-family: "Montserrat";
     width: 100%;
 }
 
@@ -79,7 +79,7 @@ ul li  {
     color: black; /* origional: #fff; */
     background-color: hsla(45, 35%, 75%, 1.0); /* origional: #fed136; */
     border-color: hsla(45, 35%, 75%, 1.0); /* origional: #fed136; */
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-weight: 700;
 }
@@ -103,7 +103,7 @@ ul li  {
     color: #fff;
     background-color: #fed136;
     border-color: #fed136;
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-weight: 700;
     border-radius: 3px;
@@ -163,7 +163,7 @@ ul li  {
     background-color: #fed136;
 }
 .navbar-default .nav li a {
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-weight: 400;
     letter-spacing: 1px;
@@ -249,14 +249,14 @@ footer {
 }
 footer span.copyright {
     line-height: 40px;
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     text-transform: none;
 }
 footer ul.quicklinks {
     margin-bottom: 0;
     line-height: 40px;
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     text-transform: none;
 }
@@ -420,7 +420,7 @@ header .intro-text .intro-heading {
     /*color: hsla(45, 35%, 75%, 1.0);*/
     background-color: hsla(45, 35%, 75%, 1.0);
     border-color: hsla(45, 35%, 75%, 1.0);
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-weight: 700;
     border-radius: 3px;
@@ -506,7 +506,7 @@ section h3.section-subheading {
     margin-bottom: 130px;
   }
   header .intro-text .intro-heading {
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 75px;
@@ -606,7 +606,7 @@ section h3.section-subheading {
 /*@media (min-width:768px) {*/
 @media only screen and (min-width : 768px) {
   header .intro-text .intro-heading-small {
-      font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
       /*text-transform: uppercase;*/
       font-weight: 400;
       font-size: 50px;
@@ -722,7 +722,7 @@ header .intro-text .intro-lead-in {
     margin-bottom: 25px;
 }
 header .intro-text .intro-heading {
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 50px;
