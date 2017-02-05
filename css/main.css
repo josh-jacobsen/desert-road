@@ -819,7 +819,7 @@ header .intro-text .intro-heading {
 }
 
 .service-heading {
-  font-size: 18px;
+  font-size: 1.3em;
 }
 
 .para-text {
@@ -850,22 +850,24 @@ header .intro-text .intro-heading {
 
 .services-image-srm {
   height: auto;
-  width: 45%;
-}
-
-.services-image-training {
-  margin-top: 40px;
-  margin-bottom: 14px;
-  height: auto;
-  width: 36%;
+  width: 150px;
 }
 
 .services-image-defence {
   margin-top: 28px;
   margin-bottom: 7px;
   height: auto;
-  width: 36%;
+  width: 135px;
 }
+
+.services-image-training {
+  margin-top: 40px;
+  margin-bottom: 14px;
+  height: auto;
+  width: 135px;
+}
+
+
 
 
 /* Custom, iPhone Retina */
@@ -1154,22 +1156,28 @@ header .intro-text .intro-heading {
 
 
   .services-image-srm {
+    margin-top: 20px;
+    margin-bottom: 4px;
     height: auto;
-    width: 33%;
-  }
-
-  .services-image-training {
-    margin-top: 40px;
-    margin-bottom: 14px;
-    height: auto;
-    width: 26%;
+    width: 143px;
   }
 
   .services-image-defence {
     margin-top: 28px;
-    margin-bottom: 7px;
+    margin-bottom: 13px;
     height: auto;
-    width: 26%;
+    width: 125px;
+  }
+
+  .services-image-training {
+    margin-top: 34px;
+    margin-bottom: 21px;
+    height: auto;
+    width: 112px;
+  }
+
+  .service-heading--training {
+
   }
 
 }
@@ -1242,25 +1250,7 @@ header .intro-text .intro-heading {
           margin-bottom: 40px;
       }
 
-      /* SRM, Defence Solutions, Training */
-      .service-heading {
-        font-size: 18px;
-      }
 
-      .service-heading--srm {
-        margin-top: 12px;
-        margin-bottom: 16px;
-      }
-
-      .service-heading--defence {
-        margin-top: 32px;
-        margin-bottom: 27px;
-      }
-
-      .service-heading--training {
-        margin-top: 27px;
-        margin-bottom: 25px;
-      }
 
       /* Text of SRM, Defence Solutions, Training */
 
@@ -1292,23 +1282,47 @@ header .intro-text .intro-heading {
     color: white;
   }
 
+  /* SRM, Defence Solutions, Training */
+  .service-heading {
+    font-size: 18px;
+  }
+
+  .service-heading--srm {
+    margin-top: 12px;
+    margin-bottom: 26px;
+  }
+
+  .service-heading--defence {
+    margin-top: 18px;
+    margin-bottom: 26px;
+  }
+
+  .service-heading--training {
+    margin-top: 20px;
+    margin-bottom: 26px;
+  }
+
+  /* SVG Images for Services*/
+
   .services-image-srm {
+    margin-top: -3px;
+    margin-bottom: 3px;
     height: auto;
-    width: 60%;
+    width: 50%;
   }
 
   .services-image-defence {
-    margin-top: 0;
+    margin-top: 7px;
     margin-bottom: 7px;
     height: auto;
-    width: 53%;
+    width: 43%;
   }
 
   .services-image-training {
-    margin-top: 5px;
-    margin-bottom: 17px;
+    margin-top: 12px;
+    margin-bottom: 12px;
     height: auto;
-    width: 49%;
+    width: 39%;
   }
 
 
@@ -1385,25 +1399,6 @@ header .intro-text .intro-heading {
       margin-bottom: 40px;
   }
 
-  /* SRM, Defence Solutions, Training */
-  .service-heading {
-    font-size: 22px;
-  }
-
-  .service-heading--srm {
-    margin-top: 34px;
-    margin-bottom: 27px;
-  }
-
-  .service-heading--defence {
-    margin-top: 32px;
-    margin-bottom: 28px;
-  }
-
-  .service-heading--training {
-    margin-top: 50px;
-    margin-bottom: 29px;
-  }
 
   /* Text of SRM, Defence Solutions, Training */
 
@@ -1437,25 +1432,47 @@ header .intro-text .intro-heading {
     color: white;
   }
 
-  .services-image-srm {
-    margin-top: 4px;
-    margin-bottom: 2px;
-    height: auto;
-    width: 42%;
+
+  /* SRM, Defence Solutions, Training */
+  .service-heading {
+    font-size: 22px;
   }
 
-  .services-image-training {
-    margin-top: 4px;
-    margin-bottom: -7px;
+  .service-heading--srm {
+    margin-top: 33px;
+    margin-bottom: 28px;
+  }
+
+  .service-heading--defence {
+    margin-top: 44px;
+    margin-bottom: 28px;
+  }
+
+  .service-heading--training {
+    margin-top: 64px;
+    margin-bottom: 28px;
+  }
+
+  /* SVG Images for Services*/
+  .services-image-srm {
+    margin-top: -5px;
+    margin-bottom: 9px;
     height: auto;
-    width: 37%;
+    width: 42%;
   }
 
   .services-image-defence {
     margin-top: 0;
     margin-bottom: 7px;
     height: auto;
-    width: 41%;
+    width: 38%;
+  }
+
+  .services-image-training {
+    margin-top: 4px;
+    margin-bottom: -7px;
+    height: auto;
+    width: 35%;
   }
 }
 
