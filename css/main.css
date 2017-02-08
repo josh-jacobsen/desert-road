@@ -10,7 +10,7 @@
 }
 
 body {
-  font-family: "Montserrat", Tahoma, Geneva, sans-serif;
+  font-family: "Montserrat", "Tahoma", "Geneva", sans-serif;
   line-height: 1.75;
 }
 
@@ -37,9 +37,7 @@ p {
     -webkit-box-decoration-break: clone;
 
 }
-p.large {
-    font-size: 16px;
-}
+
 a, a:hover, a:focus, a:active, a.active {
     outline: 0;
 }
@@ -50,12 +48,9 @@ a:hover, a:focus, a:active, a.active {
     color: hsla(45, 35%, 75%, 1.0); /* original #fec503 */
 }
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Montserrat";
     text-transform: uppercase;
-    /*font-weight: 700;*/
     font-weight: 500;
 }
-
 
 /*Keeps bullet points lined up with surrounding text */
 ul  {
@@ -79,7 +74,7 @@ ul li  {
     color: black; /* origional: #fff; */
     background-color: hsla(45, 35%, 75%, 1.0); /* origional: #fed136; */
     border-color: hsla(45, 35%, 75%, 1.0); /* origional: #fed136; */
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Montserrat", "Tahoma", "Geneva", sans-serif;/* "Helvetica Neue", Helvetica, Arial, sans-serif; */
     text-transform: uppercase;
     font-weight: 700;
 }
@@ -103,7 +98,7 @@ ul li  {
     color: #fff;
     background-color: #fed136;
     border-color: #fed136;
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Montserrat", "Tahoma", "Geneva", sans-serif; /* "Helvetica Neue", Helvetica, Arial, sans-serif; */
     text-transform: uppercase;
     font-weight: 700;
     border-radius: 3px;
@@ -131,10 +126,6 @@ ul li  {
 .navbar-default {
     background-color: #222;
     border-color: transparent;
-    /*uncomment the below code for navbar shadow */
-    /*-webkit-box-shadow: 0 8px 6px -6px #999;
-    -moz-box-shadow: 0 8px 6px -6px #999;
-    box-shadow: 0 8px 6px -6px #999;*/
 }
 .navbar-default .navbar-brand {
     /*color: #fed136;*/
@@ -163,7 +154,7 @@ ul li  {
     background-color: #fed136;
 }
 .navbar-default .nav li a {
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Montserrat", "Tahoma", "Geneva", sans-serif; /* "Helvetica Neue", Helvetica, Arial, sans-serif; */
     text-transform: uppercase;
     font-weight: 400;
     letter-spacing: 1px;
@@ -229,8 +220,6 @@ section {
   padding-bottom: 100px;
 }
 
-
-
 section h3.section-subheading {
     font-size: 16px;
     font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -249,14 +238,14 @@ footer {
 }
 footer span.copyright {
     line-height: 40px;
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Montserrat", "Tahoma", "Geneva", sans-serif; /* "Helvetica Neue", Helvetica, Arial, sans-serif; */
     text-transform: uppercase;
     text-transform: none;
 }
 footer ul.quicklinks {
     margin-bottom: 0;
     line-height: 40px;
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Montserrat", "Tahoma", "Geneva", sans-serif; /* "Helvetica Neue", Helvetica, Arial, sans-serif; */
     text-transform: uppercase;
     text-transform: none;
 }
@@ -371,10 +360,7 @@ input {
 }
 
 .company-name {
-  /*margin-top: 4%;*/
-  /*text-align: center;*/
-  font-family: "Montserrat";
-}
+  }
 
 .intro-text {
   display: flex;
@@ -685,9 +671,7 @@ section h3.section-subheading {
 
 /* Protecting what matters */
 .company-name {
-  /*margin-top: 4%;*/
   text-align: center;
-  font-family: "Montserrat";
 }
 
 /* Protecting what matters */
