@@ -21,6 +21,9 @@
     <!-- Custom CSS -->
     <link href="css/main.css" rel="stylesheet">
 
+    <!-- Animations CSS -->
+    <link href="css/animate.css" rel="stylesheet">
+
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
@@ -137,26 +140,31 @@
 
           <div class="row text-center">
             <!-- <a href="views/risk.html"> -->
-              <div class="col-sm-4">
+              <div class="col-sm-4 wp2 animated">
+                <div class="icon">
                   <img class="services-image-srm" src="./svg/dice.svg">
-                  <h4 class="service-heading service-heading--srm muted-color">Security Risk Management</h4>
+                </div>
+                <h4 class="service-heading service-heading--srm muted-color">Security Risk Management</h4>
 
-                  <p class="para-text para-text--size">DRPM provides security risk management support and advice for agencies working to deliver services in enviroments of high-pressure and increased risk. These can include clients working in: </p>
+                <p class="para-text para-text--size">DRPM provides security risk management support and advice for agencies working to deliver services in enviroments of high-pressure and increased risk. These can include clients working in: </p>
 
-                  <div class="index-list index-list--align">
-                    <ul class="para-text--size">
-                      <li class="text-muted">Social welfare provision</li>
-                      <li class="text-muted">Medical facilities</li>
-                      <li class="text-muted">Mental health facilities</li>
-                      <li class="text-muted">Corrections facilities</li>
-                    </ul>
-                  </div>
-
+                <div class="index-list index-list--align">
+                  <ul class="para-text--size">
+                    <li class="text-muted">Social welfare provision</li>
+                    <li class="text-muted">Medical facilities</li>
+                    <li class="text-muted">Mental health facilities</li>
+                    <li class="text-muted">Corrections facilities</li>
+                  </ul>
+                </div>
               </div>
             <!-- </a> -->
             <!-- <a href="views/defence.html"> -->
-              <div class="col-sm-4">
-                <img class="services-image-defence" src="./svg/nzdf.svg">
+
+              <div class="col-sm-4 wp2 animated delay-05s">
+                <div class="icon">
+                  <img class="services-image-defence" src="./svg/nzdf.svg">
+                </div>
+
                 <h4 class="service-heading service-heading--defence muted-color">Defence Solutions</h4>
                 <p class="para-text para-text--size">DRPM provides specialist advisory and project management services to the defence industry.</p>
                 <p class="para-text para-text--size">Our staff have been involved in a range of aspects of the NZDF project management life-cycle, including:</p>
@@ -169,8 +177,10 @@
             <!-- </a> -->
 
             <!-- <a href="views/training.html"> -->
-              <div class="col-sm-4">
+              <div class="col-sm-4 wp2 animated delay-1s">
+                <div class="icon">
                   <img class="services-image-training" src="./svg/training_2.svg">
+                </div>
                   <h4 class="service-heading service-heading--training muted-color">Training Courses</h4>
                   <p class="para-text para-text--size">DRPM provides a variety of training solutions to meet the needs of a diverse range of agencies. Our current training courses include:</p>
 
@@ -281,7 +291,7 @@
 
     <script src="js/classie.js"></script>
 
-    <!-- disbled the animated header for the meantime -->
+    <!-- Shrink menu on scroll down -->
     <script src="js/cbpAnimatedHeader.js"></script>
 
     <!-- Contact Form JavaScript -->
@@ -290,9 +300,11 @@
     <!-- Custom Theme JavaScript -->
     <script src="js/agency.js"></script>
 
-    <!--  Open Dropdown on hover -->
+    <!-- Open Dropdown on hover -->
     <script src="js/jquery.bootstrap-dropdown-hover.js"></script>
 
+    <!-- Waypoints -->
+    <script src="js/scripts.js"></script>
 
 </body>
 
