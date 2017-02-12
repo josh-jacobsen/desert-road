@@ -712,7 +712,19 @@ header .intro-text .intro-heading {
   text-align: center;
   vertical-align: middle;
   position: relative;
-  margin: 50px;
+  margin: 50px auto;
+}
+
+.service-heading--srm {
+  margin-bottom: 20px;
+}
+
+.service-heading--defence {
+  margin-bottom: 20px;
+}
+
+.service-heading--training {
+  margin-bottom: 20px;
 }
 
 /* The Services SVGs*/
@@ -883,7 +895,7 @@ header .intro-text .intro-heading {
   .section-heading {
       font-size: 34px;
       margin-top: 0;
-      margin-bottom: 40px;
+      /*margin-bottom: 40px;*/
   }
 
   .service-heading {
@@ -1021,7 +1033,31 @@ header .intro-text .intro-heading {
   }
 
 
+  /* The Services SVGs*/
   .services-image-srm {
+    /*margin-top: -5px;*/
+    margin-bottom: 9px;
+    height: auto;
+    width: 45%;
+  }
+
+  .services-image-defence {
+    /*margin-top: 28px;*/
+    margin-bottom: 19px;
+    height: auto;
+    width: 38%;
+  }
+
+  .services-image-training {
+    /*margin-top: 40px;*/
+    margin-bottom: 19px;
+    height: auto;
+    width: 35%;
+  }
+
+/* End of services SVGs*/
+
+  /*.services-image-srm {
     margin-top: 20px;
     margin-bottom: 4px;
     height: auto;
@@ -1040,11 +1076,9 @@ header .intro-text .intro-heading {
     margin-bottom: 21px;
     height: auto;
     width: 112px;
-  }
+  }*/
 
-  .service-heading--training {
 
-  }
 
 }
 
@@ -1284,24 +1318,21 @@ header .intro-text .intro-heading {
     font-size: 18px;
   }
 
-  .service-heading--srm {
-    margin-top: 12px;
-    margin-bottom: 26px;
+  /*.service-heading--srm {
+    margin-bottom: 20px;
   }
 
   .service-heading--defence {
-    margin-top: 18px;
-    margin-bottom: 26px;
+    margin-bottom: 20px;
   }
 
   .service-heading--training {
-    margin-top: 20px;
-    margin-bottom: 26px;
-  }
+    margin-bottom: 20px;
+  }*/
 
   /* SVG Images for Services*/
 
-  .services-image-srm {
+  /*.services-image-srm {
     margin-top: -3px;
     margin-bottom: 3px;
     height: auto;
@@ -1320,7 +1351,7 @@ header .intro-text .intro-heading {
     margin-bottom: 12px;
     height: auto;
     width: 39%;
-  }
+  }*/
 
 
 
@@ -1435,7 +1466,7 @@ header .intro-text .intro-heading {
     font-size: 22px;
   }
 
-  .service-heading--srm {
+  /*.service-heading--srm {
     margin-top: 33px;
     margin-bottom: 28px;
   }
@@ -1448,10 +1479,10 @@ header .intro-text .intro-heading {
   .service-heading--training {
     margin-top: 64px;
     margin-bottom: 28px;
-  }
+  }*/
 
   /* SVG Images for Services*/
-  .services-image-srm {
+  /*.services-image-srm {
     margin-top: -5px;
     margin-bottom: 9px;
     height: auto;
@@ -1471,7 +1502,7 @@ header .intro-text .intro-heading {
     height: auto;
     width: 35%;
   }
-}
+}*/
 
 
 /* SVGs */
