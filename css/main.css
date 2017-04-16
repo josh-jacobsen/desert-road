@@ -479,7 +479,8 @@ section h3.section-subheading {
   height: 85vh;
   background-repeat: none;
   background-attachment: fixed;
-  background-position: -360px 10px;
+  /*background-position: -360px 10px;*/
+  background-position: 0 0;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -753,7 +754,7 @@ header .intro-text .intro-heading {
 @media only screen and (min-width : 320px) {
 
   .index-fullscreen-bg {
-    background-position: -220px 18px;
+    /*background-position: -220px 18px;*/
   }
 
   /* The left brand text/logo */
