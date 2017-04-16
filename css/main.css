@@ -477,16 +477,18 @@ section h3.section-subheading {
     rgba(0, 0, 0, 0.35)
   ), url(../images/king_mobile.jpg);
   height: 85vh;
-  background-size: 100%;
+  /*background-size: 100%;
   width: 100%;
   background-repeat: none;
-  background-attachment: fixed;
+  background-attachment: fixed;*/
+
   /*background-position: -360px 10px;*/
-  background-position: 0 0;
+
+  /*background-position: 0 0;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
-  -o-background-size: cover;
+  -o-background-size: cover;*/
 }
 
 /* Set the navbar thickness (always present until 768px) */
