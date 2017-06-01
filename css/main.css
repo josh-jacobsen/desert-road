@@ -477,12 +477,16 @@ section h3.section-subheading {
     rgba(0, 0, 0, 0.35)
   ), url(../images/king_mobile.jpg);
   height: 85vh;
-  background-position: -260px 60px;
 
-  background-size: cover;
+  background-attachment: fixed;
+
+
+  /*background-position: -260px 60px;*/
+
+  /*background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  -o-background-size: cover;
+  -o-background-size: cover;*/
 
 }
 
