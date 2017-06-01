@@ -478,10 +478,11 @@ section h3.section-subheading {
   ), url(../images/king_mobile.jpg);
   height: 85vh;
   background-size: cover;
+  background-attachment: fixed;
+
 }
 
   /*
-  width: 100%;
   background-attachment: fixed;*/
   /*background-size: 100%;*/
   /*background-repeat: none;*/
