@@ -1,3 +1,5 @@
+
+/***************** Icons fade in on scroll down ******************/
 //
 $(window).scroll(function () {
     var y = $(window).scrollTop(),
@@ -45,3 +47,10 @@ $(window).scroll(function () {
 // 	});
 //
 // });
+
+
+/***************** Fix image resize on mobile scroll ******************/
+$(window).scroll(function() {
+  var scrolledY = $(window).scrollTop();
+  $('#index-bg').css('background-position', 'left ' + ((scrolledY)) + 'px');
+});
